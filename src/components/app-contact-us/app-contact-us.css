@@ -1,0 +1,9 @@
+@import '../../global/variables.css';
+
+:host {
+  display: block;
+}
+
+iframe, .location {
+  width: 100%;
+}

@@ -1,0 +1,80 @@
+:host {
+  display: block;
+}
+
+header {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 930px) {
+  header { 
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header,
+.subHeader {
+  color: #928E1E
+}
+
+header {
+  background-color: #280840;
+  padding: 1rem
+}
+
+/* 
+  Logo 
+*/
+.logo {
+  width: 27rem;
+  display: block;
+  text-decoration: none;
+  /* margin: 0 auto */
+}
+
+img {
+  width: 100%;
+}
+
+/* .logo-ny {
+  font-size: 4.9rem
+}
+
+.logo-m {
+  font-size: 1.6rem
+} */
+
+/* 
+  Nav bar 
+*/
+nav {
+  text-align: center;
+  padding-top: 1rem
+}
+
+nav a {
+  color: #FFF;
+  font-family: Lao-UI, Arial, sans-serif;
+  padding: 0 1rem;
+  line-height: 3rem;
+  text-transform: lowercase;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  text-decoration: none
+}
+
+nav a.green,
+nav a:hover {
+  color: #928E1E
+}

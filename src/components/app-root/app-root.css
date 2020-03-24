@@ -1,0 +1,18 @@
+#body {
+  margin: 1rem 1rem 3rem;
+  display: flex;
+}
+
+aside {
+  margin-right: 2rem;
+  flex: 0 0 24%;
+}
+
+@media screen and (max-width: 940px) {
+  /*aside {
+    display: block;
+    width: 100%;
+    flex-grow: 2;
+    margin-top: 4rem; 
+  }*/
+}

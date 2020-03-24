@@ -1,0 +1,44 @@
+:root {
+  --primary-purple: #38204A;
+  --secondary-purple: #280840;
+  --primary-green: #928E1E;
+
+  --font-family: Arial, sans-serif;
+  --secondary-font-family: GeoSlab-Light, Arial, sans-serif;
+  --default-font-size: 16px;
+  --paragraph-font-size: 1.4rem;
+  --h2-font-size: 2rem;
+}
+
+h2 {
+  color: var(--primary-green);
+  font-family: var(--font-family);
+  font-size: var(--h2-font-size);
+  font-weight: normal;
+  margin-bottom: 10px;
+  
+}
+
+h3 {
+  font-size: var(--default-font-size);
+  font-weight: 700;
+  color: var(--primary-purple);
+}
+
+p {
+  font-family: var(--font-family);
+  font-size: var(--paragraph-font-size);
+  color: var(--primary-purple);
+  margin-bottom: 1rem;
+  line-height: 2rem
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+a {
+  color: var(--primary-purple);
+  font-family: var(--font-family);
+  font-size: var(--paragraph-font-size);
+}
