@@ -1,4 +1,4 @@
-import {Component, h, Host, State, Listen, Event, EventEmitter, ComponentInterface} from '@stencil/core';
+import {Component, h, State, Listen, Event, EventEmitter, ComponentInterface, Build} from '@stencil/core';
 
 import {TestimonialInterface} from '../../global/definitions/definitions';
 
@@ -92,15 +92,19 @@ export class SidebarTestimonial implements ComponentInterface {
   }
 
   componentWillLoad() {
-    const newCurrentQuote = this.getQuote(this.currentQuoteIndex);
-    this.updateCurrentQuote(newCurrentQuote);
+    if (!Build.isBrowser) {
+      const newCurrentQuote = this.getQuote(this.currentQuoteIndex);
+      this.updateCurrentQuote(newCurrentQuote);
+    }
   }
 
   componentDidLoad() {
-    this.intervalTimer = window.setInterval(() => {
-      // Request a new quote
-      this.rotateQuote.emit();
-    }, 6000);
+    if (!Build.isBrowser) {
+      this.intervalTimer = window.setInterval(() => {
+        // Request a new quote
+        this.rotateQuote.emit();
+      }, 6000);
+    }
   }
 
   componentDidUnload() {
@@ -108,21 +112,21 @@ export class SidebarTestimonial implements ComponentInterface {
   }
 
   render() {
-    if (!this.currentQuote) {
+    if (!Build.isBrowser || !this.currentQuote) {
       return;
     }
 
     const {quote, cite} = this.currentQuote;
 
     return (
-      <Host>
+      <div class="testimonials">
         <nyms-sidebar-segment heading="what our clients say about us..">
           <blockquote>
             {quote}
             <cite>- {cite}</cite>
           </blockquote>
         </nyms-sidebar-segment>
-      </Host>
+      </div>
     );
   }
 

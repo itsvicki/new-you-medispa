@@ -7,21 +7,24 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
-
+import {
+  MatchResults,
+} from '@stencil/router';
 
 export namespace Components {
   interface AppAbout {}
   interface AppBook {}
   interface AppContactUs {}
   interface AppHome {}
+  interface AppNotFound {}
   interface AppPriceList {}
   interface AppProduct {
-    'page': string;
+    'match': MatchResults;
   }
   interface AppProducts {}
   interface AppRoot {}
   interface AppTreatment {
-    'page': string;
+    'match': MatchResults;
   }
   interface AppTreatments {}
   interface NymsAccordion {
@@ -67,6 +70,12 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppNotFoundElement extends Components.AppNotFound, HTMLStencilElement {}
+  var HTMLAppNotFoundElement: {
+    prototype: HTMLAppNotFoundElement;
+    new (): HTMLAppNotFoundElement;
   };
 
   interface HTMLAppPriceListElement extends Components.AppPriceList, HTMLStencilElement {}
@@ -157,6 +166,7 @@ declare global {
     'app-book': HTMLAppBookElement;
     'app-contact-us': HTMLAppContactUsElement;
     'app-home': HTMLAppHomeElement;
+    'app-not-found': HTMLAppNotFoundElement;
     'app-price-list': HTMLAppPriceListElement;
     'app-product': HTMLAppProductElement;
     'app-products': HTMLAppProductsElement;
@@ -179,14 +189,15 @@ declare namespace LocalJSX {
   interface AppBook {}
   interface AppContactUs {}
   interface AppHome {}
+  interface AppNotFound {}
   interface AppPriceList {}
   interface AppProduct {
-    'page'?: string;
+    'match'?: MatchResults;
   }
   interface AppProducts {}
   interface AppRoot {}
   interface AppTreatment {
-    'page'?: string;
+    'match'?: MatchResults;
   }
   interface AppTreatments {}
   interface NymsAccordion {
@@ -221,6 +232,7 @@ declare namespace LocalJSX {
     'app-book': AppBook;
     'app-contact-us': AppContactUs;
     'app-home': AppHome;
+    'app-not-found': AppNotFound;
     'app-price-list': AppPriceList;
     'app-product': AppProduct;
     'app-products': AppProducts;
@@ -248,6 +260,7 @@ declare module "@stencil/core" {
       'app-book': LocalJSX.AppBook & JSXBase.HTMLAttributes<HTMLAppBookElement>;
       'app-contact-us': LocalJSX.AppContactUs & JSXBase.HTMLAttributes<HTMLAppContactUsElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+      'app-not-found': LocalJSX.AppNotFound & JSXBase.HTMLAttributes<HTMLAppNotFoundElement>;
       'app-price-list': LocalJSX.AppPriceList & JSXBase.HTMLAttributes<HTMLAppPriceListElement>;
       'app-product': LocalJSX.AppProduct & JSXBase.HTMLAttributes<HTMLAppProductElement>;
       'app-products': LocalJSX.AppProducts & JSXBase.HTMLAttributes<HTMLAppProductsElement>;

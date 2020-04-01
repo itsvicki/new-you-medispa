@@ -73,7 +73,10 @@ typings/
 .env.test
 
 # stenciljs build output
-www
+www/
+
+# Mac
+.DS_Store
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache

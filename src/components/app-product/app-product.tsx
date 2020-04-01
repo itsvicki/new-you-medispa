@@ -1,4 +1,5 @@
 import {Component, Host, Prop, h, ComponentInterface} from '@stencil/core';
+import { MatchResults } from '@stencil/router';
 
 import {ProductService} from '../../global/services/product.service';
 import HelperService from '../../global/services/helper.service';
@@ -18,25 +19,25 @@ export class AppProduct implements ComponentInterface {
   private toHypertext = this.helperService.toHypertext;
   private error: ErrorInterface = {} as ErrorInterface;
 
-  @Prop() page: string;
+  @Prop() match: MatchResults;
 
   async componentWillRender() {
-    if (this.page) {
-      try {
-        const product = await ProductService.getProduct(this.page);     
-        this.product = product;
+    const page = `/product/${this.match.params.page}`;
+    
+    try {
+      const product = await ProductService.getProduct(page);     
+      this.product = product;
 
-        // Update browser title & description
-        document.title = `${product.name} - New You Medispa`;
-        document.querySelector('meta[name="description"]').setAttribute("content", product.browserDescription); 
+      // Update browser title & description
+      document.title = `${product.name} - New You Medispa`;
+      document.querySelector('meta[name="description"]').setAttribute("content", product.browserDescription); 
+    }
+    catch(err) {
+      if (err.code === 'NO_MATCH') {
+        this.fileNotFound();
       }
-      catch(err) {
-        if (err.code === 'NO_MATCH') {
-          this.fileNotFound();
-        }
 
-        this.error = err;
-      }
+      this.error = err;
     }
   }
 

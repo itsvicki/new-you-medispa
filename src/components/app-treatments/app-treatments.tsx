@@ -1,4 +1,4 @@
-import { Component, Host, h, ComponentInterface } from '@stencil/core';
+import {Component, Host, h, ComponentInterface} from '@stencil/core';
 
 import {TreatmentService} from '../../global/services/treatment.service';
 
@@ -32,9 +32,6 @@ export class AppTreatments implements ComponentInterface {
   render() {
     const {errorMessage} = this.error;
     const treatments = this.treatments;
-
-    // console.log('treatments', treatments);
-    // console.log('errorMessage', errorMessage);
 
     return (
       <Host>

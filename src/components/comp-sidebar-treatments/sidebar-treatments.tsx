@@ -1,4 +1,4 @@
-import {Component, h, ComponentInterface} from '@stencil/core';
+import {Component, h, ComponentInterface, Build} from '@stencil/core';
 
 import {TreatmentService} from '../../global/services/treatment.service';
 
@@ -14,16 +14,23 @@ export class SidebarTreatments implements ComponentInterface {
   private error: ErrorInterface = {} as ErrorInterface;
 
   async componentWillLoad() {
-    try {
-      const treatments:TreatmentInterface[] = await TreatmentService.getTreatments();
-      this.treatments = treatments;
-    }
-    catch(err) {
-      this.error = err;
+    // Only fetch products when the app has hydrated to avoid old version of the products being displayed
+    if (Build.isBrowser) {
+      try {
+        const treatments:TreatmentInterface[] = await TreatmentService.getTreatments();
+        this.treatments = treatments;
+      }
+      catch(err) {
+        this.error = err;
+      }
     }
   }
 
   render() {
+    if (!Build.isBrowser) {
+      return;
+    }
+
     const {errorMessage} = this.error;
     const treatments = this.treatments;
 

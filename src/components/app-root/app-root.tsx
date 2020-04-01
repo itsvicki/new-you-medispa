@@ -14,21 +14,18 @@ export class AppRoot implements ComponentInterface {
 
         <div id="body">          
           <main>
-            <stencil-router scrollTopOffset={0}>
-              <stencil-route-switch>
+            <stencil-router >
+              <stencil-route-switch scrollTopOffset={0}>
                 <stencil-route url='/' component='app-home' exact={true} />
                 <stencil-route url='/about' component='app-about' />
-                <stencil-route url='/products' component='app-products' exact={true} />
-                <stencil-route url='/product/:pageName' routeRender={({match}) => (
-                  <app-product page={match!.url}></app-product>
-                )}/>
-                <stencil-route url='/treatments' component='app-treatments' exact={true} />
-                <stencil-route url='/treatment/:pageName' routeRender={({match}) => (
-                  <app-treatment page={match!.url}></app-treatment>
-                )}/>
+                <stencil-route url={['/products', '/products/']} component='app-products' exact={true} />
+                <stencil-route url='/product/:page' component='app-product' />
+                <stencil-route url={['/treatments', '/treatments/']} component='app-treatments' exact={true} />
+                <stencil-route url='/treatment/:page' component='app-treatment' />
                 <stencil-route url='/book-a-consultation' component='app-book' />
                 <stencil-route url='/price-list' component='app-price-list' />
                 <stencil-route url='/contact-us' component='app-contact-us' />
+                <stencil-route component="app-not-found" />
               </stencil-route-switch>
             </stencil-router>
           </main>
