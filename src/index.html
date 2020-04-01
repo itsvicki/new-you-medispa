@@ -42,13 +42,12 @@
             document.body.appendChild(gaScript);
 
             const gaInit = document.createElement("script");
-            gaInit.onLoad = () => {
+            gaInit.textContent = `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'UA-43857992-1');
-            };
+              gtag('config', 'UA-43857992-1');`;
             
             document.body.appendChild(gaInit);
           },
