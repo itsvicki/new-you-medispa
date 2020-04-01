@@ -16,17 +16,13 @@ export class AppAbout implements ComponentInterface {
   render() {
     return (
       <div>
-        <picture>
-          <img src="/assets/images/newyou_reception.jpg" class="reception-img" alt="Reception in New You Medispa" />
-        </picture>
+        <img src="/assets/images/newyou_reception.jpg" class="reception-img" alt="Reception in New You Medispa" />
 
         <h2>About Us</h2>
         <p>New You Medispa Ltd are the leading experts in low-cost but highly effective cosmetic treatments including <a href="/treatment/muscle-relaxing" title="Muscle Relaxing with New You Medispa" class="underline">anti-wrinkle treatments</a> and <a href="/treatment/dermal-filler" title="Derma Fillers with New You Medispa" class="underline">Dermal Fillers</a>.</p>
         <p>Theresa Whiffing and Dianne Turner founded New You Medispa in June 2013. Theresa has previously worked for some of the leading clinics in the North East, including the Newcastle Sk:n clinic and the Ewan Bramley Skin Clinic on the North Shields Fish Quay.</p>
         
-        <picture class="float-left">
-          <img src="/assets/images/newyou_outside.jpg" alt="Outside of New You Medispa" />
-        </picture>
+        <img src="/assets/images/newyou_outside.jpg" alt="Outside of New You Medispa" class="float-left" />
 
         <br />
         <p>The clinic is centrally located; next to the North Shields Shopping Centre, where parking is free after 5:30PM.</p>

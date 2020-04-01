@@ -15,6 +15,11 @@ h3 {
   margin-left: 2rem;
 }
 
+img {
+  /* Bug fix for IE/Edge making the image width 100% */
+  width: initial;
+}
+
 .bold {
   font-weight: bold;
 }

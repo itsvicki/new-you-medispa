@@ -19,7 +19,7 @@ h2 {
   font-size: var(--h2-font-size);
   font-weight: normal;
   margin-bottom: 1rem;
-  
+  margin-top: 2rem;
 }
 
 h3, h4 {
@@ -44,7 +44,10 @@ p {
   color: var(--primary-purple);
   margin-top: 0;
   margin-bottom: 1rem;
-  line-height: 2rem
+  line-height: 2rem;
+
+  /* IE/Edge fix for text being displayed on the right for some reason */
+  text-align: left;
 }
 
 p:first-child {

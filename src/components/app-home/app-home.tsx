@@ -24,7 +24,7 @@ export class AppHome implements ComponentInterface {
           <p>Whether we're giving dermal fillers, muscle relaxing treatment or skin peels we pride ourselves on always providing a relaxed, friendly atmosphere, where your satisfaction is both paramount and guaranteed.</p>
           <p>All treatments are provided by our expert Harley Street trained nurse with over 12 years of experience.</p>
           <p>Call today for your free consultation and find out how we can give you your own New You look.</p>
-          <p class="em">New You Medispa, <em>be your own kind of beautiful.</em></p>
+          <p >New You Medispa, <span class='em'>be your own kind of beautiful.</span></p>
         </div>
       </div>
     );

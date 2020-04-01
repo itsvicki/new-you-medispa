@@ -16,7 +16,11 @@
 .float-left {
   float: left;
   margin-right: 2rem;
+
+  /* Fix for IE/Edge making the image 100% width */
+  width: inherit;
 }
+
 
 .book-consultation {
   display: block;

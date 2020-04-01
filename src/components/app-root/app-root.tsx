@@ -14,8 +14,8 @@ export class AppRoot implements ComponentInterface {
 
         <div id="body">          
           <main>
-            <stencil-router >
-              <stencil-route-switch scrollTopOffset={0}>
+            <stencil-router scrollTopOffset={0}>
+              <stencil-route-switch>
                 <stencil-route url='/' component='app-home' exact={true} />
                 <stencil-route url='/about' component='app-about' />
                 <stencil-route url={['/products', '/products/']} component='app-products' exact={true} />

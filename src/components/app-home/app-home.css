@@ -1,1 +1,9 @@
 @import '../../global/variables.css';
+
+.em {
+  font-style: italic;
+
+  /* IE/Edge fix for it not inheriting certain p styles */
+  color: var(--primary-purple);
+  font-size: var(--paragraph-font-size);
+}

@@ -63,6 +63,8 @@
   color: var(--primary-purple);
   cursor: pointer;
   box-sizing: border-box;
+  background-color: transparent;
+  text-align: left;
 }
 
 .title h4 { 
