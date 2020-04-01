@@ -7,3 +7,8 @@
 iframe, .location {
   width: 100%;
 }
+
+h3.small {
+  display: inline-block;
+  margin-bottom: 0;
+}

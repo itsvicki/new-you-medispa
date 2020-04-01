@@ -8,9 +8,15 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'www',
+      copy: [
+        {src: 'global/data'},
+        {src: 'global/definitions'},
+        {src: 'global/services'},
+        {src: 'global/site-structure-utils.ts'}
+      ],
       // comment the following line to disable service workers in production
       serviceWorker: null,
-      baseUrl: 'https://myapp.local/'
+      baseUrl: 'https://newyou-medispa.co.uk/'
     }
   ]
 };

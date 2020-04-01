@@ -1,11 +1,19 @@
-import { Component, h } from '@stencil/core';
+import {Component, h, ComponentInterface} from '@stencil/core';
+
+import {defaultPageMetaDescription} from '../../global/site-structure-utils';
 
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.css',
   shadow: true
 })
-export class AppHome {
+export class AppHome implements ComponentInterface {
+  private pageMetaDescription = defaultPageMetaDescription;
+
+  constructor() {
+    document.title = `New You Medispa for affordable cosmetic treatments`;
+    document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);
+  }
 
   render() {
     return (
@@ -18,12 +26,6 @@ export class AppHome {
           <p>Call today for your free consultation and find out how we can give you your own New You look.</p>
           <p class="em">New You Medispa, <em>be your own kind of beautiful.</em></p>
         </div>
-
-        {/* <stencil-route-link url='/profile/stencil'>
-          <button>
-            Profile page
-          </button>
-        </stencil-route-link> */}
       </div>
     );
   }

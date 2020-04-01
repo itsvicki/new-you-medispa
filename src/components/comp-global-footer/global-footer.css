@@ -1,0 +1,16 @@
+@import '../../global/variables.css';
+
+:host {
+  display: block;
+}
+
+footer {
+  background-color: var(--primary-purple);
+  padding: 1rem;
+}
+
+p, span, a {
+  color: #FFF;
+  font-size: var(--small-font-size);
+  text-align: right;
+}

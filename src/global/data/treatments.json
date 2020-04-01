@@ -1,0 +1,1050 @@
+{
+  "treatments": [
+    {
+      "name": "Muscle Relaxing",
+      "url": "/treatment/muscle-relaxing", 
+      "browserDescription": "Muscle Relaxing - available at new you medispa, north shields, newcastle-upon-tyne",
+      "thumbnail": "/assets/images/treatments/botox.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+           "h2",
+           null,
+           "Botox"
+        ],
+        [
+          "img",
+          {
+            "class": "float-right",
+            "src": "/assets/images/treatments/galderma_azzalure_allergan.jpg",
+            "alt": "New You Medispa use Galderma, Azzlure and Allergan"
+          }
+        ],
+        [
+          "p",
+          {
+            "class": "bold"
+          },
+          "Once only available to the rich and famous, Botox is now an affordable treatment for everyone. It is the UK's most popular non-surgical treatment."
+        ],
+        [
+          "p",
+          null,
+          "Botox is a purified natural protein produced by the Clostridium Botulinum Bacterium. It is a prescription only medicine administered by Doctors, Dentists or Independent Nurse Prescribers. Botox is used to soften lines and wrinkles which appear with expression, (dynamic lines), not for lines that can be seen without facial movement (static lines), although these will be softened. Botox is usually used to soften crow's feet, forehead and frown lines. However, it can also be used to soften lip and bunny (nose) lines."
+        ],
+        [
+          "h3",
+          null,
+          "Procedure"
+        ],
+        [
+          "p",
+          null,
+          "Botox treatments take approximately 20 minutes. The skin is cleansed and then swabbed with an alcohol wipe. A khol pencil is used to mark the injection points and the injections themselves are usually painless. You should begin to see a softening of facial movement within 3-4 days, the full effect will be seen in 14 days and results usually last up to 4 months. At the end of your treatment an appointment will be made for a free check-up to assess the results. The treated skin can be red, with slight swelling, occasionally bruising can occur."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Do not massage the treated area at all. If the area is washed, gently pat dry. Do not rub the treated area for 48 hours."
+          ],
+          [
+            "li",
+            null,
+            "Do not bend excessively or lie down for 4 hours."
+          ],
+          [
+            "li",
+            null,
+            "Do exercise the treated muscles by tensing and relaxing them for the first hour after treatment."
+          ],
+          [
+            "li",
+            null,
+            "Botox takes from 2-14 days to become effective. This is dependent on the strength of the muscle injected and the individual response to it."
+          ],
+          [
+            "li",
+            null,
+            "Treatment with Botox is temporary and to maintain the effects, treatment is recommended every 3-6 months."
+          ],
+          [
+            "li",
+            null,
+            "You should always wear a sunscreen (minimum SPF25), we recommend ",
+            [
+              "a",
+              {
+                "href":"/product/skin-ceuticals"
+              },
+              "SkinCeuticals Tinted Moisturiser with SPF 50"
+            ],
+            " even in winter."
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Can anyone have Botox?"
+        ],
+        [
+          "p",
+          null,
+          "Botox is not suitable if.."
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Individuals have a medical history of muscle weakening conditions such as Myasthenia Gravis."
+          ],
+          [
+            "li",
+            null,
+            "There is infection at the injection site."
+          ],
+          [
+            "li",
+            null,
+            "Botox should not be used in any one with severe anaphylaxis or hypersensitivity to Botox."
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Dermal Fillers",
+      "url": "/treatment/dermal-fillers", 
+      "thumbnail": "/assets/images/treatments/fillers.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "p",
+          {
+            "class": "bold"
+          },
+          "Hydrates and plumps the skin, restoring its natural youthfulness and vitality."
+        ],
+        [
+          "p",
+          null,
+          "Dermal fillers are composed of hyaluronic acid, a naturally occurring substance in human skin, which has water binding properties which hydrate and plump the skin. As we age we make less hyaluronic acid which results in the skin becoming dehydrated, less elastic and prone to lines and wrinkles."
+        ],
+        [
+          "img",
+          {
+            "class": "float-right",
+            "src": "/assets/images/treatments/juvederm_teosyal.jpg",
+            "alt": ""
+          }
+        ],
+        [
+          "p",
+          null,
+          "Dermal fillers are a synthetic form of hyaluronic acid, which are made into a gel which is broken down slowly by the body. They produce volume, collagen, support and hydration to the area injected. Modern fillers also contain lidocaine, a numbing agent, which reduces any discomfort felt during the procedure."
+        ],
+        [
+          "p",
+          null,
+          "At New You Medispa we only use established and trusted products."
+        ],
+        [
+          "h3",
+          null,
+          "Procedure"
+        ],
+        [
+          "p",
+          null,
+          "The skin is cleansed and swabbed with an alcohol wipe. The filler is then injected along the wrinkle or fold, an immediate improvement can be seem which continues to improve over the following 2 weeks as it hydrates. The skin treated can be red, with slight swelling, occasionally bruising can occur."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Avoid touching the area within 6 hours following treatment."
+          ],
+          [
+            "li",
+            null,
+            "Do not expose the treated area to intense heat, saunas, sunbeds or extreme cold."
+          ],
+          [
+            "li",
+            null,
+            "Avoid sun exposure/sun bed use for 2 weeks. An ",
+            [
+              "a",
+              {
+                "href": "/product/skin-ceuticals"
+              },
+              "SPF50 Moisturiser"
+            ],
+            " should be used for 2 weeks."
+          ],
+          [
+            "li",
+            null,
+            "If you have previously had cold sores, there is a risk of the needle punctures contributing to cold sores forming after treatment."
+          ],
+          [
+            "li",
+            null,
+            "Aspirin, Ibprofen or similar medications can result in increased bruising at the injection site."
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Can anyone have a Dermal Fillers?"
+        ],
+        [
+          "p",
+          null,
+          "Dermal Fillers are not suitable if.."
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "If there is active infection or cold sores in the area to be treated."
+          ],
+          [
+            "li",
+            null,
+            "A history of severe allergy or anaphylactic shock."
+          ],
+          [
+            "li",
+            null,
+            "Allergy or hypersensitivity to hyaluronic acid or lidnocaine."
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Results"
+        ],
+        [
+          "img",
+          {
+            "src": "/assets/images/treatments/dermal_filler_before_and_after.jpg",
+            "alt": ""
+          }
+        ],
+        [
+          "p",
+          null,
+          "Images courtesy of ",  
+          [
+            "a",
+            {
+              "href": "https://juvederm.co.uk/",
+              "target": "_blank"
+            },
+            "Juvederm"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Dermaroller",
+      "url": "/treatment/dermaroller", 
+      "thumbnail": "/assets/images/treatments/dermaroller.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "p",
+          {
+            "class": "bold"
+          },
+          "For smoother, brighter, younger looking skin."
+        ],
+        [
+          "p",
+          null,
+          "After a Dermaroller procedure your body starts to naturally regenerate and repair the skin, working below the surface in the dermis, to produce healthier collagen. This takes time, as new collagen can take 12 weeks to fully form. Although your skin will feel immediately tighter and more refined, it can take up to 6 weeks before visible signs of regeneration and repair are seen and the process will continue over several months, providing you with a natural and long lasting enhancement. New collagen formation results in acne scars can being diminished."
+        ],
+        [
+          "h3",
+          null,
+          "Procedure"
+        ],
+        [
+          "p",
+          null,
+          "A cream containing a numbing agent, lidocaine, is applied for 30 minutes, to minimise any discomfort. The skin is cleansed and then swabbed with an antibacterial solution. A high quality titanium Dermaroller is then rolled over the skin to create thousands of miniscule contact points, leaving your body's natural healing process to rejuvenate and repair the skin, for a smoother, younger looking appearance. A concentrated solution of vitamins, mineral and antioxidants are then massaged into the skin, which are immediately absorbed, giving it essential nutrients."
+        ],
+        [
+          "p",
+          null,
+          "Unlike many other treatments, Dermaroller is one of the few skin therapies that is suitable to treat all skin types regardless of colour or sensitivity, although it should not be used whilst acne is still active. It is proven to be effective on all areas of the body including the face, neck and décolletage. Unlike deep peels there is minimal out-time, make-up can be applied the day after treatment."
+        ],
+        [
+          "p",
+          null,
+          "Improvement can be seen from 6 - 12 weeks following treatment, with results continuing to improve for up to a year or more. A minimum course of 3 treatments is recommended at 4-6 week intervals to achieve optimum results."
+        ],
+        [
+          "p",
+          null,
+          "After the procedure you will feel as though you have mild sunburn and your skin will feel warm which will subside after 1-2 hours."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Use tepid water to cleanse the face for the following 48 hours and dry gently, always make sure your hands are clean when touching the treated area"
+          ],
+          [
+            "li",
+            null,
+            "It is recommended that make up is not applied for 12 hours after the procedure"
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Can anyone have a Dermaroller?"
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Not suitable if infection/cold sores present"
+          ],
+          [
+            "li",
+            null,
+            "Aspirin, Ibprofen or similar medications can result in increased bruising"
+          ],
+          [
+            "li",
+            null,
+            "If you have previously had cold sores, there is a risk of the needle punctures contributing to new cold sores forming after treatment."
+          ],
+          [
+            "li",
+            null,
+            "You should always wear a sunscreen (minimum SPF25), we recommend ",
+            [
+              "a",
+              {
+                "href":"/product/skin-ceuticals"
+              },
+              "SkinCeuticals Tinted Moisturiser with SPF 50"
+            ],
+            " even in winter."
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "TCA Peels",
+      "url": "/treatment/tca-peels", 
+      "thumbnail": "/assets/images/treatments/skin_peal.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "a",
+          {
+            "href": "https://skintech.info",
+            "target": "_blank"
+          },
+          [
+            "img",
+            {
+              "class": "float-right",
+              "src": "/assets/images/treatments/skin_tech.png",
+              "alt": ""
+            }
+          ]
+        ],
+        [
+          "p",
+          {
+            "class": "bold"
+          },
+          "Stimulates the dermis to produce healthier collagen resulting in a brighter fresher look with softening of lines, wrinkles and pigmentation. "
+        ],
+        [
+          "p",
+          null,
+          [
+            "a",
+            {
+              "href": "https://skintech.info"
+            },
+            "Skin Tech"
+          ],
+          " Easy TCA Peels can be used on all types of skin e.g. fine skin, normal skin or greasy or thick skin. There is no need for any skin preparation when using an Easy TCA Peel."
+        ],
+        [
+          "h3",
+          null,
+          "Procedure"
+        ],
+        [
+          "p",
+          null,
+          "The skin is cleansed, and the solution is applied in several layers using cotton buds. After applying the Easy TCA Peel to the skin the patient will experience some heat or irritation. This shows the product is working. The practitioner will be looking for any visible signs of 'frosting' (whitening) of the skin, after which they will apply a post peel cream, which will immediately stop the irritation. After approximately 30 minutes to one hour the skin will feel more taut and healthy."
+        ],
+        [
+          "p",
+          null,
+          "Your skin will start to darken after 3-5 days and will then start to flake. When you do start to peel, do not rub the skin harshly or use exfoliant products, these can cause redness, irritation and possibly infection. Continue to use the moisturising cream recommended by your Easy TCA Peel clinic as directed."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "p",
+          null,
+          "It is important to remember that whilst undergoing treatment with Easy TCA Peel the skin has little or no protection to UV light (both UVA and UVB). Therefore it is important not to expose the skin to sun light, or sun bed use for at least two weeks following the Easy TCA Peel treatment. You should always wear a sunscreen (minimum SPF25), we recommend ",
+          [
+            "a",
+            {
+              "href":"/product/skin-ceuticals"
+            },
+            "SkinCeuticals Tinted Moisturiser with SPF 50"
+          ],
+          ", even in winter. It is very important to remember that you should not use moisturising creams that contain fruit acids as these may cause dryness and irritation."
+        ],
+        [
+          "h3",
+          null,
+          "Can anyone have a TCA Peels?"
+        ],
+        [
+          "p",
+          null,
+          "TCA Peel are not suitable if.."
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "There has been sun exposure, sun beds, use or if the skin is going to be exposed to sun in the next 2 weeks then treatment should be avoided until any tan has faded"
+          ],
+          [
+            "li",
+            null,
+            "Medications such as Roaccutane, chemotherapy or topical steroids have been used on the face in the last year"
+          ],
+          [
+            "li",
+            null,
+            "There has been Kidney failure in the last year"
+          ],
+          [
+            "li",
+            null,
+            "The skin should not be broken, have infection present or cold sores"
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Results"
+        ],
+        [
+          "img",
+          {
+            "src": "/assets/images/treatments/tca_peels_before_and_after.jpg",
+            "alt": ""
+          }
+        ],
+        [
+          "p",
+          null,
+          "Images courtesy of ",  
+          [
+            "a",
+            {
+              "href": "https://skintech.info",
+              "target": "_blank"
+            },
+            "Skin Tech"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Glycolic Skin Peels",
+      "url": "/treatment/glycolic-skin-peels", 
+      "thumbnail": "/assets/images/treatments/glycolic_skin_peal.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "p",
+          {
+            "class": "bold"
+          },
+          "If you want a treatment to make your skin feel brighter, fresher and younger looking, then Glycolic Peels are for you."
+        ],
+        [
+          "p", 
+          null,
+          "They can soften fine lines, help with spot outbreaks and reduce black/whiteheads. They also enhance the effects of Botox and Dermal Fillers by stimulating collagen in the dermis of the skin."
+        ],
+        [
+          "img",
+          {
+            "class": "float-right",
+            "src": "/assets/images/treatments/NeoStrata_company.png",
+            "alt": ""
+          }
+        ],
+        [
+          "p",
+          null,
+          "Glycolic acid is derived from sugar cane and comes in a range of strengths. At New You Medispa we use prescription strength, clinic only peels, to safely but effectively exfoliate your skin. We only use world renowned ",
+          [
+            "a",
+            {
+              "href": "https://neostrata.com/",
+              "target": "_blank"
+            },
+            "NeoStrata"
+          ],
+          "® Glycolic Peels to achieve the best results."
+        ],
+        [
+          "p",
+          null,
+          "To achieve the best results in the quickest time, it is recommended to use a mild ",
+          [
+            "a",
+            {
+              "href": "/product/glycolic-moisturiser",
+              "target": "_blank"
+            },
+            "Glycolic moisturiser"
+          ],
+          " in the morning and a ",
+          [
+            "a",
+            {
+              "href": "/product/retin-a",
+              "target": "_blank"
+            },
+            "Retin A"
+          ],
+          " at night for 2 weeks prior to treatment to prepare the skin. Both of these products are available to buy in store. A course of 6 peels is recommended, 2 peels at 35%, 50% and 70% strength."
+        ],
+        [
+          "h3", 
+          null,
+          "The Procedure"
+        ],
+        [
+          "p", 
+          null,
+          "The skin is cleansed and the Glycolic acid applied, there will be a mild prickling sensation. After 3 minutes it is neutralised and a",
+          [
+            "a",
+            {
+              "href": "/product/skin-ceuticals",
+              "target": "_blank"
+            },
+            "SkinCeuticals Tinted Moisturiser"
+          ],
+          " with SPF 50 is applied. After treatment the skin looks immediately brighter, occasionally it can be slightly red and slight flaking may occur after 3 days."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Don't use a Retin A or Glycolic product for 24hrs before or 48hrs after treatment"
+          ],
+          [
+            "li",
+            null,
+            "Avoid sun exposure/sun bed use for 2 weeks. An ",
+            [
+              "a",
+              {
+                "href": "/product/skin-ceuticals"
+              },
+              "SPF50 Moisturiser"
+            ],
+            " should be used for 2 weeks."
+          ],
+          [
+            "li",
+            null,
+            "Avoid facials, marks and scrubs for 2 weeks."
+          ],
+          [
+            "li",
+            null,
+            "Men should avoid shaving on day of treatment."
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Can anyone have a Glycolic Peel?"
+        ],
+        [
+          "p",
+          null,
+          "Glycolic Peels are not suitable if.."
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "There has been sun exposure or have used sun beds or is going to be exposed should avoid treatment for 2 weeks"
+          ],
+          [
+            "li",
+            null,
+            "Medication such Roaccutane taken in the last year or topical steroids used on the face"
+          ],
+          [
+            "li",
+            null,
+            "Kidney failure in the last year"
+          ],
+          [
+            "li",
+            null,
+            "Skin should not be broken, have infection present or cold sores"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Skin Tightening",
+      "url": "/treatment/skin-tightening", 
+      "thumbnail": "/assets/images/treatments/endymed_3_deep.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "h3",
+          null,
+          "Skin Tightening & Contouring"
+        ],
+        [
+          "h3",
+          null,
+          "Endymed 3Deep"
+        ],
+        [
+          "p", 
+          null,
+          "Even with a healthy lifestyle our skin gradually loses its firm healthy look. Sun, weight fluctuations and UVA exposure, for example, all result in our skin producing less collagen and elastin. This leaves our skin sagging and causes lines and wrinkles to form."
+        ],
+        [
+          "h3",
+          null,
+          "How does the Endymed 3Deep help with this?"
+        ],
+        [
+          "p", 
+          null,
+          "Endymed 3Deep uses Radio Frequency to gently heat the dermis. This will provide you with an immediate and noticeable tightening, firming and lifting of your skin which lasts for 2-3 days. However, in the weeks that follow the treatment your skin will once again begin to produce higher levels of collagen, giving you a long-term tighter and more youthful appearance."
+        ],
+        [
+          "p", 
+          null,
+          "The procedure is suitable for tightening of the eyes, jowls, neck and chest."
+        ],
+        [
+          "p", 
+          null,
+          "In order for you to enjoy the best long-term effect, we recommend a course of 6 treatments over 8 weeks."
+        ],
+        [
+          "p", 
+          null,
+          "However, you can also use a one-off treatment to enjoy the short-term tightening of the skin for special events, such as weddings."
+        ],
+        [
+          "h3", 
+          null,
+          "Procedure"
+        ],
+        [
+          "p", 
+          null,
+          "Endymed 3Deep facial tightening is a pain free, relaxing treatment with no side-effects."
+        ],
+        [
+          "p", 
+          null,
+          "Your skin will be cleansed and a clear gel applied. A hand piece is then moved around your skin, warming it to 40 degrees C. The treatment takes 20-20 minutes depending on the area and your skin will be slightly red. Make-up can be applied immediately."
+        ],
+        [
+          "h3", 
+          null,
+          "Post treatment instructions"
+        ],
+        [
+          "p", 
+          null,
+          "After the first treatment, you will be given a ",
+          [
+            "a",
+            {
+              "href": "/product/skin-active-matrix-support"
+            },
+            "NeoStrata Skin Active Matrix Support (SPF 30) moisturiser"
+          ],
+          " which will protect your skin and provide it with essential nutrients. More Neostrata moisturisers are available for purchase in the clinic."
+        ],
+        [
+          "h3",
+          null, 
+          "Can anyone have the treatment?"
+        ],
+        [
+          "p",
+          null,
+          "This treatment is not suitable for;"
+        ],
+        [
+          "ul",
+          null,
+          [
+            "li",
+            null,
+            "Heavy smokers"
+          ],
+          [
+            "li",
+            null,
+            "Frequent sunbed users"
+          ],
+          [
+            "li",
+            null,
+            "Anyone pregnant or breast feeding"
+          ],
+          [
+            "li",
+            null,
+            "Individuals with pacemakers or metal implants in the treatment area"
+          ],
+          [
+            "li",
+            null,
+            "Anyone taking blood thinners, medications affecting the skin and who have auto-immune disease."
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Results"
+        ],
+        [
+          "img",
+          {
+            "src": "/assets/images/treatments/skin_tightening_before_and_after.jpg",
+            "alt": ""
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Dermalux LED Phototherapy",
+      "url": "/treatment/dermalux-led-phototherapy", 
+      "thumbnail": "/assets/images/treatments/dermalux_led_phototherapy.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "h3",
+          null,
+          "Rejuvenates, repairs and revitalises"
+        ],
+        [
+          "p",
+          null,
+          [
+            "a",
+            {
+              "href": "https://dermaluxled.com/LED-Phototherapy/",
+              "target": "_blank"
+            },
+            "Dermalux®"
+          ],
+          " LED Phototherapy is a pain free, relaxing, non-invasive skin treatment that harnesses the power of natural light by energising cells to repair quicker and rejuvenate faster. It is clinically proven to reverse the visible signs of ageing, clear acne and heal sensitive skin conditions such as rosacea, eczema and psoriasis. It is suitable for all skin types and conditions, without any downtime."
+        ],
+        [
+          "p",
+          null,
+          "The visible effects are immediate; Dermalux® instantly awakens a tired and dull complexion. After just one treatment skin is incredibly hydrated, plump and radiant and redness and irritation is calmed. Light therapy also promotes a feeling of wellbeing, helping to relieve the stresses and strains of everyday life! A course of treatments offers dramatic and lasting improvement in the appearance and health of the skin."
+        ],
+        [
+          "p",
+          null,
+          "Dermalux® LED Phototherapy uses 3 wavelengths of light, Red, Near Infrared and Blue."
+        ],
+        [
+          "h3",
+          null,
+          "Dermalux® LED Blue Light"
+        ],
+        [
+          "p",
+          null,
+          "Overuse of antibiotics in the treatment of acne has resulted in the P.acnes bacteria becoming more resistance to traditional antibiotics. Blue Light is proven to destroy the P.acnes bacteria. The Blue LED Light can be used in conjunction with Near Infra Red Light to reduce the inflammation associated with acne, control oil production and minimise pores."
+        ],
+        [
+          "p",
+          null,
+          "Blue light can also be used in the management of eczema and psoriasis."
+        ],
+        [
+          "h3",
+          null,
+          "Dermalux® LED Red Light"
+        ],
+        [
+          "p",
+          null,
+          "Anti-aging properties, stimulates collagen, increases skin's hydration, shrinks pores and sebaceous glands, reduces pigmentation and clams the skin.After just one session the skin will become clearer, hydrated and plump with a healthy radiance."
+        ],
+        [
+          "p",
+          null,
+          "Red light is a medically approved treatment for rosacea."
+        ],
+        [
+          "h3",
+          null,
+          "Dermalux® LED Near Infra-Red Light"
+        ],
+        [
+          "p",
+          null,
+          "Infra-red light is the most deeply absorbed wavelength by skin tissue. it works synergistically with red light to achieve optimum rejuvenation and repair for anti-ageing, pigmentation, deep tissue healing, scar reduction and helps boost immune system activity. Increases tone and elasticity of the skin and helps heal cystic acne."
+        ],
+        [
+          "h3",
+          null,
+          "The Procedure"
+        ],
+        [
+          "p",
+          null,
+          "The skin is thoroughly cleansed to remove make-up and skin creams to allow the light to penetrate the skin.You will be give protective eyewear, which should be kept in place throughout the procedure. The skin is exposed to the appropriate light for 20 minutes."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "p",
+          null,
+          "Make-up can be applied immediately after treatment if required. Normal skincare regime can be resumed immediately."
+        ],
+        [
+          "h3",
+          null,
+          "Can anyone have a Dermalux® treatment?"
+        ],
+        [
+          "p",
+          null,
+          "There are certain circumstances in which phototherapy may prove to be unsuitable. Certain medications may causes photosensitivity and specific conditions may be triggered by light."
+        ],
+        [
+          "p",
+          null,
+          "For your safety and comfort, it is imperative that any medication illness, condition or other treatment that you may be undergoing are fully disclosed during your consultation."
+        ],
+        [
+          "p",
+          null,
+          "The skin will be slightly pink."
+        ],
+        [
+          "h3",
+          null,
+          "Results"
+        ],
+        [
+          "p",
+          null,
+          "Acne - After 12 Dermalux® combination treatments over 6 weeks"
+        ],
+        [
+          "img",
+          {
+            "src": "/assets/images/treatments/dermaluxled_before_and_after.jpg",
+            "alt": ""
+          }
+        ],
+        [
+          "p",
+          null,
+          "Skin rejuvenation - After 10 combined skin exfoliation and Dermalux® red and NIR combination treatments over 10 weeks"
+        ],
+        [
+          "img",
+          {
+            "src": "/assets/images/treatments/dermaluxled_skin_rejuvenation_before_and_after.jpg",
+            "alt": ""
+          }
+        ],
+        [
+          "p",
+          null,
+          "Images courtesy of ",  
+          [
+            "a",
+            {
+              "href": "https://dermaluxled.com/LED-Phototherapy",
+              "target": "_blank"
+            },
+            "Dermalux®"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Fractional Skin Resurfacing",
+      "url": "/treatment/fractional-skin-resurfacing", 
+      "thumbnail": "/assets/images/treatments/fsr.jpg",
+      "hypertext": [
+        "div",
+        null,
+        [
+          "h3",
+          null,
+          "Endymed 3Deep Fractional Skin Resurfacing"
+        ],
+        [
+          "p",
+          null,
+          "Even with a healthy lifestyle our skin gradually loses its firm healthy look. Sun, weight fluctuations and UVA exposure, for example, all result in our skin producing less collagen and elastin. This leaves our skin sagging and causes lines and wrinkles to form. Skin aging affects all layers of the skin."
+        ],
+        [
+          "p",
+          null,
+          "Skin aging manifests differently in each layer of the skin. The dermis (deep layer) is best treated by stimulating collagen production, whereas the epidermis (top layer) best responds to ablative treatment where the damaged skin cells are removed, reducing skin roughness, pigmentation and acne scaring."
+        ],
+        [
+          "p",
+          null,
+          "The Endymed 3Deep FSR simultaneously performs micro-fractional ablation and deep dermal heating in one pulse. Recovery is fast with minimal down time."
+        ],
+        [
+          "p",
+          null,
+          "A course of three treatments is recommended."
+        ],
+        [
+          "h3",
+          null,
+          "Procedure"
+        ],
+        [
+          "p",
+          null,
+          "The skin is cleansed and a topical anesthetic applied to numb the skin making the procedure more comfortable."
+        ],
+        [
+          "p",
+          null,
+          "The procedure takes approximately 30 minutes."
+        ],
+        [
+          "h3",
+          null,
+          "Post Procedure Instructions"
+        ],
+        [
+          "p",
+          null,
+          "Your skin will be red and slightly swollen. PrescribedSolution Control Tactics, a heeling, soothing product that hydrates the skin while reducing redness and swelling, will be applied."
+        ],
+        [
+          "p",
+          null,
+          "To enhance the affect clients having treatment to their eyes will be given a complimentary ",
+          [
+            "a",
+            {
+              "href": "/product/skin-active-instensive-eye-therapy"
+            },
+            "NeoStrata's Skin Active Intensive Eye Therapy"
+          ],
+          " those having a facial treatment will be given a complimentary ",
+          [
+            "a",
+            {
+              "href": "/product/skin-active-matrix-support"
+            },
+            "NeoStrata Skin Active Matrix Support SPF 30."
+          ]
+        ],
+        [
+          "h3",
+          null,
+          "Results"
+        ],
+        [
+          "img",
+          {
+            "src": "/assets/images/treatments/fractional_skin_resurfacing_before_and_after.jpg",
+            "alt": ""
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Acne",
+      "url": "/treatment/dermalux-led-phototherapy"
+    }
+  ]
+}

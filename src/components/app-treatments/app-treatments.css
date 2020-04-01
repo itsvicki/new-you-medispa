@@ -1,0 +1,19 @@
+@import '../../global/variables.css';
+
+:host {
+  display: block;
+}
+
+.treatments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+a {
+  display: block;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}

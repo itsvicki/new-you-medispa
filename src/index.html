@@ -2,8 +2,8 @@
 <html dir="ltr" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Stencil Starter App</title>
-  <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!">
+  <title>New You Medispa for affordable cosmetic treatments</title>
+  <meta name="description" content="Based in Newcastle-upon-Tyne, New You Medispa specialise in cosmetic treatments for you including Muscle Relaxing, Dermal Fillers, Dermaroller, TCA Peels, Glycolic Skin Peels, Skin Tightening, Fractional Skin Resurfacing treatments.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <meta name="theme-color" content="#16161d">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,7 +11,10 @@
 
   <script type="module" src="/build/app.esm.js"></script>
   <script nomodule src="/build/app.js"></script>
+
   <link href="/build/app.css" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://apikeys.civiccomputing.com"> -->
+  <link rel="dns-prefetch" href="https://civiccomputing.com">
 
   <!-- <link rel="apple-touch-icon" href="/assets/icon/icon.png">
   <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico"> -->
@@ -20,6 +23,45 @@
 <body>
 
   <app-root></app-root>
+
+  <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
+  <script>
+    var config = {
+      apiKey: '32a0d061e6eb760c3dfd526649901295282d8a2c',
+      product: 'COMMUNITY',
+      optionalCookies: [
+        {
+          name: 'analytics',
+          label: 'Analytics Cookies',
+          description: 'Analytical cookies help us to improve our website by collecting and reporting information on its usage.',
+          cookies: [],
+          onAccept : function() {
+            const gaScript = document.createElement("script");
+            gaScript.src = "https://www.googletagmanager.com/gtag/js?id=UA-43857992-1";
+            gaScript.async = true;
+            document.body.appendChild(gaScript);
+
+            const gaInit = document.createElement("script");
+            gaInit.onLoad = () => {
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-43857992-1');
+            };
+            
+            document.body.appendChild(gaInit);
+          },
+          onRevoke: function(){}
+        }
+      ],
+
+      position: 'LEFT',
+      theme: 'DARK'
+    };
+    
+    CookieControl.load(config);
+  </script>
 
 </body>
 </html>

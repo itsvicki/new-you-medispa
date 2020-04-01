@@ -4,15 +4,20 @@
 }
 
 aside {
-  margin-right: 2rem;
+  margin-left: 2rem;
   flex: 0 0 24%;
 }
 
+main {
+  flex-grow: 1;
+}
+
 @media screen and (max-width: 940px) {
-  /*aside {
+  #body {
     display: block;
-    width: 100%;
-    flex-grow: 2;
-    margin-top: 4rem; 
-  }*/
+  }
+
+  aside {
+    margin: 5rem 0 0 0;
+  }
 }

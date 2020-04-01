@@ -1,11 +1,19 @@
-import { Component, h } from '@stencil/core';
+import {Component, h, ComponentInterface} from '@stencil/core';
+
+import {defaultPageMetaDescription} from '../../global/site-structure-utils';
 
 @Component({
   tag: 'app-book',
   styleUrl: 'app-book.css',
   shadow: true
 })
-export class AppBook {
+export class AppBook implements ComponentInterface {
+  private pageMetaDescription = defaultPageMetaDescription;
+
+  constructor() {
+    document.title = `Book a free consultation with New You Medispa`;
+    document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);
+  }
 
   render() {
     return (

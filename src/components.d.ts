@@ -15,14 +15,31 @@ export namespace Components {
   interface AppContactUs {}
   interface AppHome {}
   interface AppPriceList {}
+  interface AppProduct {
+    'page': string;
+  }
+  interface AppProducts {}
   interface AppRoot {}
-  interface AsideSector {
+  interface AppTreatment {
+    'page': string;
+  }
+  interface AppTreatments {}
+  interface NymsAccordion {
+    'accordionTitle': string;
+    'name'?: string;
+    'open': boolean;
+  }
+  interface NymsGlobalFooter {}
+  interface NymsGlobalHeader {}
+  interface NymsSidebarSegment {
     'heading': string;
   }
-  interface GlobalHeader {}
-  interface SocialBar {}
-  interface TestimonialSidebar {}
-  interface TreatmentSidebar {}
+  interface NymsSidebarTestimonial {}
+  interface NymsSidebarTreatments {}
+  interface NymsSocialBar {}
+  interface OpeningHours {
+    'smallTitle': boolean;
+  }
 }
 
 declare global {
@@ -58,40 +75,82 @@ declare global {
     new (): HTMLAppPriceListElement;
   };
 
+  interface HTMLAppProductElement extends Components.AppProduct, HTMLStencilElement {}
+  var HTMLAppProductElement: {
+    prototype: HTMLAppProductElement;
+    new (): HTMLAppProductElement;
+  };
+
+  interface HTMLAppProductsElement extends Components.AppProducts, HTMLStencilElement {}
+  var HTMLAppProductsElement: {
+    prototype: HTMLAppProductsElement;
+    new (): HTMLAppProductsElement;
+  };
+
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
   };
 
-  interface HTMLAsideSectorElement extends Components.AsideSector, HTMLStencilElement {}
-  var HTMLAsideSectorElement: {
-    prototype: HTMLAsideSectorElement;
-    new (): HTMLAsideSectorElement;
+  interface HTMLAppTreatmentElement extends Components.AppTreatment, HTMLStencilElement {}
+  var HTMLAppTreatmentElement: {
+    prototype: HTMLAppTreatmentElement;
+    new (): HTMLAppTreatmentElement;
   };
 
-  interface HTMLGlobalHeaderElement extends Components.GlobalHeader, HTMLStencilElement {}
-  var HTMLGlobalHeaderElement: {
-    prototype: HTMLGlobalHeaderElement;
-    new (): HTMLGlobalHeaderElement;
+  interface HTMLAppTreatmentsElement extends Components.AppTreatments, HTMLStencilElement {}
+  var HTMLAppTreatmentsElement: {
+    prototype: HTMLAppTreatmentsElement;
+    new (): HTMLAppTreatmentsElement;
   };
 
-  interface HTMLSocialBarElement extends Components.SocialBar, HTMLStencilElement {}
-  var HTMLSocialBarElement: {
-    prototype: HTMLSocialBarElement;
-    new (): HTMLSocialBarElement;
+  interface HTMLNymsAccordionElement extends Components.NymsAccordion, HTMLStencilElement {}
+  var HTMLNymsAccordionElement: {
+    prototype: HTMLNymsAccordionElement;
+    new (): HTMLNymsAccordionElement;
   };
 
-  interface HTMLTestimonialSidebarElement extends Components.TestimonialSidebar, HTMLStencilElement {}
-  var HTMLTestimonialSidebarElement: {
-    prototype: HTMLTestimonialSidebarElement;
-    new (): HTMLTestimonialSidebarElement;
+  interface HTMLNymsGlobalFooterElement extends Components.NymsGlobalFooter, HTMLStencilElement {}
+  var HTMLNymsGlobalFooterElement: {
+    prototype: HTMLNymsGlobalFooterElement;
+    new (): HTMLNymsGlobalFooterElement;
   };
 
-  interface HTMLTreatmentSidebarElement extends Components.TreatmentSidebar, HTMLStencilElement {}
-  var HTMLTreatmentSidebarElement: {
-    prototype: HTMLTreatmentSidebarElement;
-    new (): HTMLTreatmentSidebarElement;
+  interface HTMLNymsGlobalHeaderElement extends Components.NymsGlobalHeader, HTMLStencilElement {}
+  var HTMLNymsGlobalHeaderElement: {
+    prototype: HTMLNymsGlobalHeaderElement;
+    new (): HTMLNymsGlobalHeaderElement;
+  };
+
+  interface HTMLNymsSidebarSegmentElement extends Components.NymsSidebarSegment, HTMLStencilElement {}
+  var HTMLNymsSidebarSegmentElement: {
+    prototype: HTMLNymsSidebarSegmentElement;
+    new (): HTMLNymsSidebarSegmentElement;
+  };
+
+  interface HTMLNymsSidebarTestimonialElement extends Components.NymsSidebarTestimonial, HTMLStencilElement {}
+  var HTMLNymsSidebarTestimonialElement: {
+    prototype: HTMLNymsSidebarTestimonialElement;
+    new (): HTMLNymsSidebarTestimonialElement;
+  };
+
+  interface HTMLNymsSidebarTreatmentsElement extends Components.NymsSidebarTreatments, HTMLStencilElement {}
+  var HTMLNymsSidebarTreatmentsElement: {
+    prototype: HTMLNymsSidebarTreatmentsElement;
+    new (): HTMLNymsSidebarTreatmentsElement;
+  };
+
+  interface HTMLNymsSocialBarElement extends Components.NymsSocialBar, HTMLStencilElement {}
+  var HTMLNymsSocialBarElement: {
+    prototype: HTMLNymsSocialBarElement;
+    new (): HTMLNymsSocialBarElement;
+  };
+
+  interface HTMLOpeningHoursElement extends Components.OpeningHours, HTMLStencilElement {}
+  var HTMLOpeningHoursElement: {
+    prototype: HTMLOpeningHoursElement;
+    new (): HTMLOpeningHoursElement;
   };
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement;
@@ -99,12 +158,19 @@ declare global {
     'app-contact-us': HTMLAppContactUsElement;
     'app-home': HTMLAppHomeElement;
     'app-price-list': HTMLAppPriceListElement;
+    'app-product': HTMLAppProductElement;
+    'app-products': HTMLAppProductsElement;
     'app-root': HTMLAppRootElement;
-    'aside-sector': HTMLAsideSectorElement;
-    'global-header': HTMLGlobalHeaderElement;
-    'social-bar': HTMLSocialBarElement;
-    'testimonial-sidebar': HTMLTestimonialSidebarElement;
-    'treatment-sidebar': HTMLTreatmentSidebarElement;
+    'app-treatment': HTMLAppTreatmentElement;
+    'app-treatments': HTMLAppTreatmentsElement;
+    'nyms-accordion': HTMLNymsAccordionElement;
+    'nyms-global-footer': HTMLNymsGlobalFooterElement;
+    'nyms-global-header': HTMLNymsGlobalHeaderElement;
+    'nyms-sidebar-segment': HTMLNymsSidebarSegmentElement;
+    'nyms-sidebar-testimonial': HTMLNymsSidebarTestimonialElement;
+    'nyms-sidebar-treatments': HTMLNymsSidebarTreatmentsElement;
+    'nyms-social-bar': HTMLNymsSocialBarElement;
+    'opening-hours': HTMLOpeningHoursElement;
   }
 }
 
@@ -114,14 +180,41 @@ declare namespace LocalJSX {
   interface AppContactUs {}
   interface AppHome {}
   interface AppPriceList {}
+  interface AppProduct {
+    'page'?: string;
+  }
+  interface AppProducts {}
   interface AppRoot {}
-  interface AsideSector {
+  interface AppTreatment {
+    'page'?: string;
+  }
+  interface AppTreatments {}
+  interface NymsAccordion {
+    'accordionTitle': string;
+    'name'?: string;
+    /**
+    * Emitted when the toggle loses focus.
+    */
+    'onNymsBlur'?: (event: CustomEvent<void>) => void;
+    /**
+    * Emitted when the toggle has focus.
+    */
+    'onNymsFocus'?: (event: CustomEvent<void>) => void;
+    'open'?: boolean;
+  }
+  interface NymsGlobalFooter {}
+  interface NymsGlobalHeader {}
+  interface NymsSidebarSegment {
     'heading'?: string;
   }
-  interface GlobalHeader {}
-  interface SocialBar {}
-  interface TestimonialSidebar {}
-  interface TreatmentSidebar {}
+  interface NymsSidebarTestimonial {
+    'onRotateQuote'?: (event: CustomEvent<any>) => void;
+  }
+  interface NymsSidebarTreatments {}
+  interface NymsSocialBar {}
+  interface OpeningHours {
+    'smallTitle'?: boolean;
+  }
 
   interface IntrinsicElements {
     'app-about': AppAbout;
@@ -129,12 +222,19 @@ declare namespace LocalJSX {
     'app-contact-us': AppContactUs;
     'app-home': AppHome;
     'app-price-list': AppPriceList;
+    'app-product': AppProduct;
+    'app-products': AppProducts;
     'app-root': AppRoot;
-    'aside-sector': AsideSector;
-    'global-header': GlobalHeader;
-    'social-bar': SocialBar;
-    'testimonial-sidebar': TestimonialSidebar;
-    'treatment-sidebar': TreatmentSidebar;
+    'app-treatment': AppTreatment;
+    'app-treatments': AppTreatments;
+    'nyms-accordion': NymsAccordion;
+    'nyms-global-footer': NymsGlobalFooter;
+    'nyms-global-header': NymsGlobalHeader;
+    'nyms-sidebar-segment': NymsSidebarSegment;
+    'nyms-sidebar-testimonial': NymsSidebarTestimonial;
+    'nyms-sidebar-treatments': NymsSidebarTreatments;
+    'nyms-social-bar': NymsSocialBar;
+    'opening-hours': OpeningHours;
   }
 }
 
@@ -149,12 +249,19 @@ declare module "@stencil/core" {
       'app-contact-us': LocalJSX.AppContactUs & JSXBase.HTMLAttributes<HTMLAppContactUsElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-price-list': LocalJSX.AppPriceList & JSXBase.HTMLAttributes<HTMLAppPriceListElement>;
+      'app-product': LocalJSX.AppProduct & JSXBase.HTMLAttributes<HTMLAppProductElement>;
+      'app-products': LocalJSX.AppProducts & JSXBase.HTMLAttributes<HTMLAppProductsElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-      'aside-sector': LocalJSX.AsideSector & JSXBase.HTMLAttributes<HTMLAsideSectorElement>;
-      'global-header': LocalJSX.GlobalHeader & JSXBase.HTMLAttributes<HTMLGlobalHeaderElement>;
-      'social-bar': LocalJSX.SocialBar & JSXBase.HTMLAttributes<HTMLSocialBarElement>;
-      'testimonial-sidebar': LocalJSX.TestimonialSidebar & JSXBase.HTMLAttributes<HTMLTestimonialSidebarElement>;
-      'treatment-sidebar': LocalJSX.TreatmentSidebar & JSXBase.HTMLAttributes<HTMLTreatmentSidebarElement>;
+      'app-treatment': LocalJSX.AppTreatment & JSXBase.HTMLAttributes<HTMLAppTreatmentElement>;
+      'app-treatments': LocalJSX.AppTreatments & JSXBase.HTMLAttributes<HTMLAppTreatmentsElement>;
+      'nyms-accordion': LocalJSX.NymsAccordion & JSXBase.HTMLAttributes<HTMLNymsAccordionElement>;
+      'nyms-global-footer': LocalJSX.NymsGlobalFooter & JSXBase.HTMLAttributes<HTMLNymsGlobalFooterElement>;
+      'nyms-global-header': LocalJSX.NymsGlobalHeader & JSXBase.HTMLAttributes<HTMLNymsGlobalHeaderElement>;
+      'nyms-sidebar-segment': LocalJSX.NymsSidebarSegment & JSXBase.HTMLAttributes<HTMLNymsSidebarSegmentElement>;
+      'nyms-sidebar-testimonial': LocalJSX.NymsSidebarTestimonial & JSXBase.HTMLAttributes<HTMLNymsSidebarTestimonialElement>;
+      'nyms-sidebar-treatments': LocalJSX.NymsSidebarTreatments & JSXBase.HTMLAttributes<HTMLNymsSidebarTreatmentsElement>;
+      'nyms-social-bar': LocalJSX.NymsSocialBar & JSXBase.HTMLAttributes<HTMLNymsSocialBarElement>;
+      'opening-hours': LocalJSX.OpeningHours & JSXBase.HTMLAttributes<HTMLOpeningHoursElement>;
     }
   }
 }

@@ -1,11 +1,19 @@
-import { Component, h } from '@stencil/core';
+import {Component, h, ComponentInterface} from '@stencil/core';
+
+import {defaultPageMetaDescription} from '../../global/site-structure-utils';
 
 @Component({
   tag: 'app-contact-us',
   styleUrl: 'app-contact-us.css',
   shadow: true
 })
-export class AppContactUs {
+export class AppContactUs implements ComponentInterface {
+  private pageMetaDescription = defaultPageMetaDescription;
+
+  constructor() {
+    document.title = `Contact New You Medispa`;
+    document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);   
+  }
 
   render() {
     return (
@@ -16,23 +24,28 @@ export class AppContactUs {
             width="100%" 
             height="300" 
             frameborder="0" 
+            title="Location of New You Medispa"
           ></iframe>
         </div>
 
         <div class="contact-information">
           <h2>Contact us</h2>
           
-          New You Medispa
+          <p>New You Medispa</p>
 
-          <p><strong>Email:</strong> reception@newyou-medispa.co.uk</p>
+          <p><h3 class="small">Email:</h3> <a href="mailto:reception@newyou-medispa.co.uk">reception@newyou-medispa.co.uk</a></p>
 
           <p>
-          <strong>Address:</strong><br />
-          17 Northumberland Square,<br />
-          North Shields,<br />
-          Tyne and Wear,<br />
-          NE30 1PX
+            <h3 class="small">Address:</h3><br />
+            17 Northumberland Square,<br />
+            North Shields,<br />
+            Tyne and Wear,<br />
+            NE30 1PX
           </p>
+
+          <p><h3 class="small">Telephone:</h3> <a href="tel:01912573141">0191 257 3141</a></p>
+
+          <opening-hours smallTitle></opening-hours>
         </div>
       </div>
     );

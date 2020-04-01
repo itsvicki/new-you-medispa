@@ -1,0 +1,21 @@
+:host {
+  display: block;
+
+  min-height: 21rem;
+  background-image: url("/assets/images/quotes.jpg");
+  background-repeat: no-repeat;
+  background-position: right 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+blockquote, cite {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #38204A;
+}
+

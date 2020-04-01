@@ -1,10 +1,14 @@
 @import '../../global/variables.css';
 
+.reception-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 840px) {
   .reception-img {
-    display: block;
     max-width: 80%;
-    margin: 0 auto;
     padding-bottom: 1rem;
   }
 }
@@ -14,30 +18,16 @@
   margin-right: 2rem;
 }
 
-/* Opening hours table */
-table td,
-table td time {
-    font-size: 1.4rem;
-    color: #38204A
+.book-consultation {
+  display: block;
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: var(--default-font-size);
+  text-align: center;
 }
 
-table td {
-    vertical-align: top
-}
-
-table.style1 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-collapse: collapse
-}
-
-table.style1 td {
-    padding: .5rem
-}
-
-table.style1 th {
-    background-color: #38204A;
-    color: #FFF;
-    padding: 1rem
+.opening-hours {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 14rem;
 }
