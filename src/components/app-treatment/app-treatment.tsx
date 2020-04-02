@@ -44,8 +44,6 @@ export class AppTreatment implements ComponentInterface {
     const {errorMessage} = this.error;
     const {name, url, hypertext} = this.treatment;
 
-    console.log(hypertext);
-
     return (
       <Host>
         {errorMessage 
