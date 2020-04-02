@@ -29,21 +29,21 @@ export class AppContactUs implements ComponentInterface {
         </div>
 
         <div class="contact-information">
-          <h2>Contact us</h2>
+          <h1>Contact us</h1>
           
           <p>New You Medispa</p>
 
-          <p><h3 class="small">Email:</h3> <a href="mailto:reception@newyou-medispa.co.uk">reception@newyou-medispa.co.uk</a></p>
+          <p><h2 class="small">Email:</h2> <a href="mailto:reception@newyou-medispa.co.uk">reception@newyou-medispa.co.uk</a></p>
 
           <p>
-            <h3 class="small">Address:</h3><br />
+            <h2 class="small">Address:</h2><br />
             17 Northumberland Square,<br />
             North Shields,<br />
             Tyne and Wear,<br />
             NE30 1PX
           </p>
 
-          <p><h3 class="small">Telephone:</h3> <a href="tel:01912573141">0191 257 3141</a></p>
+          <p><h2 class="small">Telephone:</h2> <a href="tel:01912573141">0191 257 3141</a></p>
 
           <opening-hours smallTitle></opening-hours>
         </div>

@@ -11,14 +11,14 @@ export class AppBook implements ComponentInterface {
   private pageMetaDescription = defaultPageMetaDescription;
 
   constructor() {
-    document.title = `Book a free consultation with New You Medispa`;
+    document.title = `Book an appointment with New You Medispa`;
     document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);
   }
 
   render() {
     return (
       <div>
-        <h2>Book an appointment</h2>
+        <h1>Book an appointment</h1>
 
         <p>Sadly, we have had to temporarily close the clinic, the safety of our clients is paramount to us. We will update you via Facebook and email.</p>
 

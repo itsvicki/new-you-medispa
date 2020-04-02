@@ -76,7 +76,7 @@ typings/
 www/
 
 # Mac
-.DS_Store
+**/.DS_Store
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache

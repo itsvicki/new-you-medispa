@@ -159,7 +159,7 @@
           "At New You Medispa we only use established and trusted products."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Procedure"
         ],
@@ -169,7 +169,7 @@
           "The skin is cleansed and swabbed with an alcohol wipe. The filler is then injected along the wrinkle or fold, an immediate improvement can be seem which continues to improve over the following 2 weeks as it hydrates. The skin treated can be red, with slight swelling, occasionally bruising can occur."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Post Procedure Instructions"
         ],
@@ -211,7 +211,7 @@
           ]
         ],
         [
-          "h3",
+          "h2",
           null,
           "Can anyone have a Dermal Fillers?"
         ],
@@ -240,7 +240,7 @@
           ]
         ],
         [
-          "h3",
+          "h2",
           null,
           "Results"
         ],
@@ -286,7 +286,7 @@
           "After a Dermaroller procedure your body starts to naturally regenerate and repair the skin, working below the surface in the dermis, to produce healthier collagen. This takes time, as new collagen can take 12 weeks to fully form. Although your skin will feel immediately tighter and more refined, it can take up to 6 weeks before visible signs of regeneration and repair are seen and the process will continue over several months, providing you with a natural and long lasting enhancement. New collagen formation results in acne scars can being diminished."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Procedure"
         ],
@@ -311,7 +311,7 @@
           "After the procedure you will feel as though you have mild sunburn and your skin will feel warm which will subside after 1-2 hours."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Post Procedure Instructions"
         ],
@@ -330,7 +330,7 @@
           ]
         ],
         [
-          "h3",
+          "h2",
           null,
           "Can anyone have a Dermaroller?"
         ],
@@ -410,7 +410,7 @@
           " Easy TCA Peels can be used on all types of skin e.g. fine skin, normal skin or greasy or thick skin. There is no need for any skin preparation when using an Easy TCA Peel."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Procedure"
         ],
@@ -425,7 +425,7 @@
           "Your skin will start to darken after 3-5 days and will then start to flake. When you do start to peel, do not rub the skin harshly or use exfoliant products, these can cause redness, irritation and possibly infection. Continue to use the moisturising cream recommended by your Easy TCA Peel clinic as directed."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Post Procedure Instructions"
         ],
@@ -443,7 +443,7 @@
           ", even in winter. It is very important to remember that you should not use moisturising creams that contain fruit acids as these may cause dryness and irritation."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Can anyone have a TCA Peels?"
         ],
@@ -477,7 +477,7 @@
           ]
         ],
         [
-          "h3",
+          "h2",
           null,
           "Results"
         ],
@@ -568,7 +568,7 @@
           " at night for 2 weeks prior to treatment to prepare the skin. Both of these products are available to buy in store. A course of 6 peels is recommended, 2 peels at 35%, 50% and 70% strength."
         ],
         [
-          "h3", 
+          "h2", 
           null,
           "The Procedure"
         ],
@@ -587,7 +587,7 @@
           " with SPF 50 is applied. After treatment the skin looks immediately brighter, occasionally it can be slightly red and slight flaking may occur after 3 days."
         ],
         [
-          "h3",
+          "h2",
           null,
           "Post Procedure Instructions"
         ],
@@ -624,7 +624,7 @@
           ]
         ],
         [
-          "h3",
+          "h2",
           null,
           "Can anyone have a Glycolic Peel?"
         ],
@@ -660,19 +660,14 @@
       ]
     },
     {
-      "name": "Skin Tightening",
+      "name": "Skin Tightening & Contouring",
       "url": "/treatment/skin-tightening", 
       "thumbnail": "/assets/images/treatments/endymed_3_deep.jpg",
       "hypertext": [
         "div",
         null,
         [
-          "h3",
-          null,
-          "Skin Tightening & Contouring"
-        ],
-        [
-          "h3",
+          "h2",
           null,
           "Endymed 3Deep"
         ],
@@ -682,7 +677,7 @@
           "Even with a healthy lifestyle our skin gradually loses its firm healthy look. Sun, weight fluctuations and UVA exposure, for example, all result in our skin producing less collagen and elastin. This leaves our skin sagging and causes lines and wrinkles to form."
         ],
         [
-          "h3",
+          "h2",
           null,
           "How does the Endymed 3Deep help with this?"
         ],
@@ -707,7 +702,7 @@
           "However, you can also use a one-off treatment to enjoy the short-term tightening of the skin for special events, such as weddings."
         ],
         [
-          "h3", 
+          "h2", 
           null,
           "Procedure"
         ],
@@ -722,7 +717,7 @@
           "Your skin will be cleansed and a clear gel applied. A hand piece is then moved around your skin, warming it to 40 degrees C. The treatment takes 20-20 minutes depending on the area and your skin will be slightly red. Make-up can be applied immediately."
         ],
         [
-          "h3", 
+          "h2", 
           null,
           "Post treatment instructions"
         ],
@@ -740,7 +735,7 @@
           " which will protect your skin and provide it with essential nutrients. More Neostrata moisturisers are available for purchase in the clinic."
         ],
         [
-          "h3",
+          "h2",
           null, 
           "Can anyone have the treatment?"
         ],
@@ -779,7 +774,7 @@
           ]
         ],
         [
-          "h3",
+          "h2",
           null,
           "Results"
         ],
@@ -800,7 +795,7 @@
         "div",
         null,
         [
-          "h3",
+          "h2",
           null,
           "Rejuvenates, repairs and revitalises"
         ],
@@ -959,7 +954,7 @@
         "div",
         null,
         [
-          "h3",
+          "h2",
           null,
           "Endymed 3Deep Fractional Skin Resurfacing"
         ],

@@ -11,14 +11,14 @@ export class AppPriceList implements ComponentInterface {
   private pageMetaDescription = defaultPageMetaDescription;
 
   constructor() {
-    document.title = `Price list for New You Medispa`;
+    document.title = `Treatment price list for New You Medispa`;
     document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);
   }
 
   render() {
     return (
       <div>
-        <h2>Treatment Price List</h2>
+        <h1>Treatment Price List</h1>
         <br />
 
         <table>

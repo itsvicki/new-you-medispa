@@ -8,7 +8,12 @@ iframe, .location {
   width: 100%;
 }
 
-h3.small {
+h2 {
+  color: var(--primary-purple);
+}
+
+h2.small {
   display: inline-block;
   margin-bottom: 0;
+  margin-top: 0;
 }

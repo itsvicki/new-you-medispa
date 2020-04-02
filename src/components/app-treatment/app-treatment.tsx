@@ -63,7 +63,7 @@ export class AppTreatment implements ComponentInterface {
                 </ul>
               </nav>
 
-              <h2>{name}</h2>
+              <h1>{name}</h1>
               {this.toHypertext(hypertext)}
           </div>
         }

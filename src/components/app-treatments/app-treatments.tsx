@@ -35,6 +35,7 @@ export class AppTreatments implements ComponentInterface {
 
     return (
       <Host>
+        <h1>Treatments List</h1>
         {errorMessage 
           ? <p>{errorMessage}</p>
           : <div class="treatments">

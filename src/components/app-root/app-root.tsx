@@ -12,7 +12,7 @@ export class AppRoot implements ComponentInterface {
         <nyms-global-header></nyms-global-header>
         <nyms-social-bar></nyms-social-bar>
 
-        <div id="body">          
+        <div id="body">
           <main>
             <stencil-router scrollTopOffset={0}>
               <stencil-route-switch>

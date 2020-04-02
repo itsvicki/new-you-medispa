@@ -60,7 +60,7 @@ export class AppProduct implements ComponentInterface {
           ? <p>{errorMessage}</p>
           : <div>
               <div class="product">
-              <h2>{name}</h2>
+              <h1>{name}</h1>
 
               <stencil-route-link url='/products'>Back to products</stencil-route-link>
             </div>

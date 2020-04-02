@@ -13,7 +13,7 @@
   }
 }
 
-.float-left {
+.outside-img {
   float: left;
   margin-right: 2rem;
 
@@ -21,6 +21,11 @@
   width: inherit;
 }
 
+@media screen and (max-width: 420px) {
+  .outside-img {
+    width: 100%;
+  }
+}
 
 .book-consultation {
   display: block;
@@ -33,5 +38,5 @@
 .opening-hours {
   margin: 0 auto;
   padding: 2rem 0;
-  width: 14rem;
+  width: 20rem;
 }

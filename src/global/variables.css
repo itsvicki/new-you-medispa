@@ -8,9 +8,19 @@
   --default-font-size: 16px;
   --paragraph-font-size: 1.4rem;
   --small-font-size: 1.2rem;
-  --h2-font-size: 20px;
-  --h3-font-size: 18px;
+  --h1-font-size: 22px;
+  --h2-font-size: 18px;
+  --h3-font-size: 16px;
   --h4-font-size: var(--default-font-size);
+}
+
+h1 {
+  color: var(--primary-green);
+  font-family: var(--font-family);
+  font-size: var(--h2-font-size);
+  font-weight: normal;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 h2 {
@@ -24,18 +34,19 @@ h2 {
 
 h3, h4 {
   font-size: var(--h3-font-size);
-  font-weight: 700;
+  font-weight: normal;
   color: var(--primary-purple);
   margin-bottom: 1rem;
 }
 
-h4 {
-  font-size: var(--h4-font-size);
-}
-
-h3.small {
+h2.small {
   font-weight: bold;
   font-size: var(--paragraph-font-size);
+  color: var(--primary-purple);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
 }
 
 p {

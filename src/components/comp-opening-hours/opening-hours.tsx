@@ -41,7 +41,7 @@ export class OpeningHours implements ComponentInterface {
   render() {
     return (
       <div>        
-        <h3 class={this.smallTitle ? 'small' : ''}>Opening Times</h3>
+        <h2 class={this.smallTitle ? 'small' : ''}>Opening Times</h2>
 
         <p>Sadly, we have had to temporarily close the clinic due to covid-19, the safety of our clients is paramount to us. We will update you via <a href="https://www.facebook.com/pages/New-You-Medispa/464518073640015" target="_blank" rel="noopener">Facebook</a> and email.</p>
         <p>Take care and keep safe.</p>

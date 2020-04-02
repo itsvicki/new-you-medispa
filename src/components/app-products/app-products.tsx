@@ -35,6 +35,8 @@ export class AppProducts implements ComponentInterface {
 
     return (
       <Host>
+        <h1>Product List</h1>
+
         {errorMessage 
           ? <p>{errorMessage}</p>
           : <div class="products">
