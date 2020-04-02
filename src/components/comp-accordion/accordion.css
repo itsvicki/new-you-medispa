@@ -96,7 +96,7 @@
   background-size: 11px 11px;
 }
 
-.title .button[aria-expanded="true"] {
+.title .button[aria-expanded="true"]:after {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);

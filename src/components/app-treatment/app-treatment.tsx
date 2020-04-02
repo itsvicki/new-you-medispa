@@ -2,7 +2,7 @@ import {Component, Host, Prop, h, ComponentInterface} from '@stencil/core';
 import { MatchResults } from '@stencil/router';
 
 import {TreatmentService} from '../../global/services/treatment.service';
-import HelperService from '../../global/services/helper.service';
+import {toHypertext} from '../../global/services/helper.utils';
 
 import {TreatmentInterface, ErrorInterface} from '../../global/definitions/definitions';
 import {fileNotFound} from '../../global/site-structure-utils';
@@ -14,9 +14,7 @@ import {fileNotFound} from '../../global/site-structure-utils';
 })
 export class AppTreatment implements ComponentInterface {
   private fileNotFound = fileNotFound;
-  private helperService: HelperService = new HelperService();
   private treatment: TreatmentInterface = {} as TreatmentInterface;
-  private toHypertext = this.helperService.toHypertext;
   private error: ErrorInterface = {} as ErrorInterface;
 
   @Prop() match: MatchResults;
@@ -32,7 +30,6 @@ export class AppTreatment implements ComponentInterface {
       // Update browser title & description
       document.title = `${treatment.name} - New You Medispa`;
       document.querySelector('meta[name="description"]').setAttribute("content", treatment.browserDescription); 
-      
     }
     catch(err) {
       if (err.code === 'NO_MATCH') {
@@ -46,6 +43,8 @@ export class AppTreatment implements ComponentInterface {
   render() {
     const {errorMessage} = this.error;
     const {name, url, hypertext} = this.treatment;
+
+    console.log(hypertext);
 
     return (
       <Host>
@@ -64,7 +63,7 @@ export class AppTreatment implements ComponentInterface {
               </nav>
 
               <h1>{name}</h1>
-              {this.toHypertext(hypertext)}
+              {toHypertext(hypertext)}
           </div>
         }
       </Host>

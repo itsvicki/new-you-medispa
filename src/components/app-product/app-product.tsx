@@ -2,7 +2,7 @@ import {Component, Host, Prop, h, ComponentInterface} from '@stencil/core';
 import { MatchResults } from '@stencil/router';
 
 import {ProductService} from '../../global/services/product.service';
-import HelperService from '../../global/services/helper.service';
+import {toHypertext} from '../../global/services/helper.utils';
 
 import {ProductInterface, ErrorInterface} from '../../global/definitions/definitions';
 import {fileNotFound} from '../../global/site-structure-utils';
@@ -14,9 +14,7 @@ import {fileNotFound} from '../../global/site-structure-utils';
 })
 export class AppProduct implements ComponentInterface {
   private fileNotFound = fileNotFound;
-  private helperService: HelperService = new HelperService();
   private product: ProductInterface = {} as ProductInterface;
-  private toHypertext = this.helperService.toHypertext;
   private error: ErrorInterface = {} as ErrorInterface;
 
   @Prop() match: MatchResults;
@@ -86,19 +84,19 @@ export class AppProduct implements ComponentInterface {
 
                 {(productFeaturesHypertext) &&
                   <nyms-accordion accordionTitle="Product Features" name="accordion-product-features" open={true}>
-                    {this.toHypertext(productFeaturesHypertext)}
+                    {toHypertext(productFeaturesHypertext)}
                   </nyms-accordion>
                 }
 
                 {(directionsHypertext) &&
                   <nyms-accordion accordionTitle="Directions" name="accordion-directions" open={false}>
-                    {this.toHypertext(directionsHypertext)}
+                    {toHypertext(directionsHypertext)}
                   </nyms-accordion>
                 }
 
                 {(precautionHypertext) &&
                   <nyms-accordion accordionTitle="Precaution" name="accordion-precaution" open={false}>
-                    {this.toHypertext(precautionHypertext)}
+                    {toHypertext(precautionHypertext)}
                   </nyms-accordion>
                 }
               </div>

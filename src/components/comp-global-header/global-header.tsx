@@ -1,5 +1,7 @@
 import {Component, h, ComponentInterface} from '@stencil/core';
 
+import {moveUserFocusToEl} from '../../global/services/helper.utils';
+
 @Component({
   tag: 'nyms-global-header',
   styleUrl: 'global-header.css',
@@ -8,13 +10,7 @@ import {Component, h, ComponentInterface} from '@stencil/core';
 export class GlobalHeader implements ComponentInterface {
   handleSkipToContentClick(env) {
     env.preventDefault();
-    
-    // Not elegant, but only way i could dynamically find the first heading to focus on 
-    const activeRoute = document.querySelector('app-root').shadowRoot.querySelector('stencil-route:not([style*="display: none"]');
-    const target:HTMLElement = activeRoute.querySelector('*').shadowRoot.querySelector('h1, h2, h3');
-
-    target.setAttribute('tabindex', "-1");
-    target.focus();
+    moveUserFocusToEl();
   }
 
   render() {
