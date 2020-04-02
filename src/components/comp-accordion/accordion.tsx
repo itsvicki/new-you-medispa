@@ -98,15 +98,15 @@ export class Accordion implements ComponentInterface {
         open={`${open}`}
         onFocus={this.onFocus.bind(this)}
         onBlur={this.onBlur.bind(this)}>
-        <header class="title" onClick={() => this.toggleAccordion()}>
-          <h4 id={name}>
+        <header class="title" 
+          onClick={() => this.toggleAccordion()}>
           <button
-              aria-controls={`nyms-accordion-${name}`}
-              aria-expanded={`${open}`}
-              aria-label={buttonLabel}
-              class="button"></button>
-            {accordionTitle}
-          </h4>
+            aria-controls={`nyms-accordion-${name}`}
+            aria-expanded={`${open}`}
+            aria-label={buttonLabel}
+            class="button"></button>
+
+          <h4 id={name}>{accordionTitle}</h4>
         </header>
         <div
           class="content-wrapper"
