@@ -1,5 +1,9 @@
 RewriteEngine on
 
+#RewriteCond %{ENV:SSL} ^$ [OR]
+#RewriteCond %{HTTP_HOST} !^www\.newyou-medispa\.co.uk
+#RewriteRule (.*) https://www.newyou-medispa.co.uk/$1 [R=301,L]
+
 RewriteCond %{ENV:SSL} ^$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.newyou-medispa\.co.uk$
-RewriteRule ^/?$ "https\:\/\/newyou-medispa\.co.uk\/" [R=301,L] 
+RewriteRule (.*) "https\:\/\/newyou-medispa\.co.uk\/$1" [R=301,L] 
