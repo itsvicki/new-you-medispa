@@ -1,4 +1,4 @@
-import {h} from '@stencil/core';
+import {h, Build} from '@stencil/core';
 
 /**
  * Format's an array of content into HTML that can be rendered
@@ -78,4 +78,18 @@ const moveUserFocusToEl = (selector: string = 'h1, h2, h3'): void => {
   }
 }
 
-export {toHypertext, moveUserFocusToEl};
+/**
+ * Register the specified page with tracking mechanisms. All must be checked to see if 
+ * User has approved the cookie usage before writing
+ * - Google Analytics
+ * 
+ * @param page 
+ */
+const registerViewWithTracking = (page: string): void => {
+  // Google analytics
+  if (Build.isBrowser && typeof (window as any).ga === "function") {
+    (window as any).ga('send', 'pageview', page);
+  }
+}
+
+export {toHypertext, moveUserFocusToEl, registerViewWithTracking};

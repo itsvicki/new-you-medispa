@@ -1,8 +1,8 @@
-import {Component, Host, Prop, h, ComponentInterface, Build} from '@stencil/core';
+import {Component, Host, Prop, h, ComponentInterface} from '@stencil/core';
 import {MatchResults, RouterHistory} from '@stencil/router';
 
 import {TreatmentService} from '../../global/services/treatment.service';
-import {toHypertext} from '../../global/services/helper.utils';
+import {toHypertext, registerViewWithTracking} from '../../global/services/helper.utils';
 
 import {TreatmentInterface, ErrorInterface} from '../../global/definitions/definitions';
 import {fileNotFound} from '../../global/site-structure-utils';
@@ -42,11 +42,7 @@ export class AppTreatment implements ComponentInterface {
   }
 
   componentDidLoad() {
-    if (Build.isBrowser && typeof (window as any).ga === "function") {
-      // Update google analytics
-      const page = this.history.location.pathname;
-      (window as any).ga('send', 'pageview', page);
-    }
+    registerViewWithTracking(this.history.location.pathname);
   }
 
   render() {

@@ -1,5 +1,7 @@
-import {Component, h, ComponentInterface, Prop, Build} from '@stencil/core';
+import {Component, h, ComponentInterface, Prop} from '@stencil/core';
 import {RouterHistory} from '@stencil/router';
+
+import {registerViewWithTracking} from '../../global/services/helper.utils';
 
 @Component({
   tag: 'app-about',
@@ -17,11 +19,7 @@ export class AppAbout implements ComponentInterface {
   }
 
   componentDidLoad() {
-    if (Build.isBrowser && typeof (window as any).ga === "function") {
-      // Update google analytics
-      const page = this.history.location.pathname;
-      (window as any).ga('send', 'pageview', page);
-    }
+    registerViewWithTracking(this.history.location.pathname);
   }
 
   render() {
