@@ -19,7 +19,7 @@ export class AppHome implements ComponentInterface {
   }
 
   componentDidLoad() {
-    if (Build.isBrowser) {
+    if (Build.isBrowser && typeof (window as any).ga === "function") {
       // Update google analytics
       const page = this.history.location.pathname;
       (window as any).ga('send', 'pageview', page);
