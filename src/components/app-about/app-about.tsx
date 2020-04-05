@@ -30,7 +30,7 @@ export class AppAbout implements ComponentInterface {
         <img src="/assets/images/newyou_reception.jpg" class="reception-img" alt="Reception in New You Medispa" />
 
         <h1>About Us</h1>
-        <p>New You Medispa Ltd are the leading experts in low-cost but highly effective cosmetic treatments including <stencil-route-link url="/treatment/muscle-relaxing">anti-wrinkle treatments</stencil-route-link> and <stencil-route-link url="/treatment/dermal-filler">Dermal Fillers</stencil-route-link>>.</p>
+        <p>New You Medispa Ltd are the leading experts in low-cost but highly effective cosmetic treatments including <stencil-route-link url="/treatment/muscle-relaxing">anti-wrinkle treatments</stencil-route-link> and <stencil-route-link url="/treatment/dermal-fillers">Dermal Fillers</stencil-route-link>>.</p>
         <p>Theresa Whiffing and Dianne Turner founded New You Medispa in June 2013. Theresa has previously worked for some of the leading clinics in the North East, including the Newcastle Sk:n clinic and the Ewan Bramley Skin Clinic on the North Shields Fish Quay.</p>
         
         <img src="/assets/images/newyou_outside.jpg" alt="Outside of New You Medispa" class="outside-img" />
