@@ -55,7 +55,7 @@ const findFirstInActiveRoute = (selector: string = 'h1, h2, h3'): HTMLElement | 
   // Not elegant, but only way i could dynamically find the first heading to focus on 
   const activeRoute:HTMLElement = document.querySelector('app-root').shadowRoot.querySelector('stencil-route:not([style*="display: none"]');
 
-  if (!activeRoute) {
+  if (activeRoute === null) {
     // Wasn't able to find active route
     return null;
   }

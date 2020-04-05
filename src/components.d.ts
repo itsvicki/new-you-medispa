@@ -9,24 +9,43 @@
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import {
   MatchResults,
+  RouterHistory,
 } from '@stencil/router';
 
 export namespace Components {
-  interface AppAbout {}
-  interface AppBook {}
-  interface AppContactUs {}
-  interface AppHome {}
-  interface AppNotFound {}
-  interface AppPriceList {}
+  interface AppAbout {
+    'history': RouterHistory;
+  }
+  interface AppBook {
+    'history': RouterHistory;
+  }
+  interface AppContactUs {
+    'history': RouterHistory;
+  }
+  interface AppHome {
+    'history': RouterHistory;
+  }
+  interface AppNotFound {
+    'history': RouterHistory;
+  }
+  interface AppPriceList {
+    'history': RouterHistory;
+  }
   interface AppProduct {
+    'history': RouterHistory;
     'match': MatchResults;
   }
-  interface AppProducts {}
+  interface AppProducts {
+    'history': RouterHistory;
+  }
   interface AppRoot {}
   interface AppTreatment {
+    'history': RouterHistory;
     'match': MatchResults;
   }
-  interface AppTreatments {}
+  interface AppTreatments {
+    'history': RouterHistory;
+  }
   interface NymsAccordion {
     'accordionTitle': string;
     'name'?: string;
@@ -185,21 +204,39 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface AppAbout {}
-  interface AppBook {}
-  interface AppContactUs {}
-  interface AppHome {}
-  interface AppNotFound {}
-  interface AppPriceList {}
+  interface AppAbout {
+    'history'?: RouterHistory;
+  }
+  interface AppBook {
+    'history'?: RouterHistory;
+  }
+  interface AppContactUs {
+    'history'?: RouterHistory;
+  }
+  interface AppHome {
+    'history'?: RouterHistory;
+  }
+  interface AppNotFound {
+    'history'?: RouterHistory;
+  }
+  interface AppPriceList {
+    'history'?: RouterHistory;
+  }
   interface AppProduct {
+    'history'?: RouterHistory;
     'match'?: MatchResults;
   }
-  interface AppProducts {}
+  interface AppProducts {
+    'history'?: RouterHistory;
+  }
   interface AppRoot {}
   interface AppTreatment {
+    'history'?: RouterHistory;
     'match'?: MatchResults;
   }
-  interface AppTreatments {}
+  interface AppTreatments {
+    'history'?: RouterHistory;
+  }
   interface NymsAccordion {
     'accordionTitle': string;
     'name'?: string;

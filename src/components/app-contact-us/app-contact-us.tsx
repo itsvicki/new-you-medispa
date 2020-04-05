@@ -1,4 +1,5 @@
-import {Component, h, ComponentInterface} from '@stencil/core';
+import {Component, h, ComponentInterface, Prop, Build} from '@stencil/core';
+import {RouterHistory} from '@stencil/router';
 
 import {defaultPageMetaDescription} from '../../global/site-structure-utils';
 
@@ -10,9 +11,19 @@ import {defaultPageMetaDescription} from '../../global/site-structure-utils';
 export class AppContactUs implements ComponentInterface {
   private pageMetaDescription = defaultPageMetaDescription;
 
+  @Prop() history: RouterHistory;
+
   constructor() {
     document.title = `Contact New You Medispa`;
     document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);   
+  }
+
+  componentDidLoad() {
+    if (Build.isBrowser) {
+      // Update google analytics
+      const page = this.history.location.pathname;
+      (window as any).ga('send', 'pageview', page);
+    }
   }
 
   render() {

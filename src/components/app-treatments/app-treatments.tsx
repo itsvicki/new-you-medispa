@@ -1,4 +1,5 @@
-import {Component, Host, h, ComponentInterface} from '@stencil/core';
+import {Component, Host, h, ComponentInterface, Prop, Build} from '@stencil/core';
+import {RouterHistory} from '@stencil/router';
 
 import {TreatmentService} from '../../global/services/treatment.service';
 
@@ -15,6 +16,8 @@ export class AppTreatments implements ComponentInterface {
   private treatments: TreatmentInterface[] = [];
   private error: ErrorInterface = {} as ErrorInterface;
 
+  @Prop() history: RouterHistory;
+
   async componentWillRender() {
     try {
       const treatments:TreatmentInterface[] = await TreatmentService.getTreatments();
@@ -26,6 +29,14 @@ export class AppTreatments implements ComponentInterface {
     }
     catch(err) {
       this.error = err;
+    }
+  }
+
+  componentDidLoad() {
+    if (Build.isBrowser) {
+      // Update google analytics
+      const page = this.history.location.pathname;
+      (window as any).ga('send', 'pageview', page);
     }
   }
 

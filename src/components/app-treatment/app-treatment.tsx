@@ -1,5 +1,5 @@
-import {Component, Host, Prop, h, ComponentInterface} from '@stencil/core';
-import { MatchResults } from '@stencil/router';
+import {Component, Host, Prop, h, ComponentInterface, Build} from '@stencil/core';
+import {MatchResults, RouterHistory} from '@stencil/router';
 
 import {TreatmentService} from '../../global/services/treatment.service';
 import {toHypertext} from '../../global/services/helper.utils';
@@ -18,6 +18,7 @@ export class AppTreatment implements ComponentInterface {
   private error: ErrorInterface = {} as ErrorInterface;
 
   @Prop() match: MatchResults;
+  @Prop() history: RouterHistory;
 
   async componentWillRender() {
     const page = `/treatment/${this.match.params.page}`;
@@ -37,6 +38,14 @@ export class AppTreatment implements ComponentInterface {
       }
 
       this.error = err;
+    }
+  }
+
+  componentDidLoad() {
+    if (Build.isBrowser) {
+      // Update google analytics
+      const page = this.history.location.pathname;
+      (window as any).ga('send', 'pageview', page);
     }
   }
 

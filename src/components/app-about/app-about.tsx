@@ -1,4 +1,5 @@
-import {Component, h, ComponentInterface} from '@stencil/core';
+import {Component, h, ComponentInterface, Prop, Build} from '@stencil/core';
+import {RouterHistory} from '@stencil/router';
 
 @Component({
   tag: 'app-about',
@@ -6,11 +7,21 @@ import {Component, h, ComponentInterface} from '@stencil/core';
   shadow: true
 })
 export class AppAbout implements ComponentInterface {
+  @Prop() history: RouterHistory;
+
   constructor() {
     document.title = `About New You Medispa`;
 
     const description = `About new you medispa in newcastle-upon-tyne`;
     document.querySelector('meta[name="description"]').setAttribute("content", description);
+  }
+
+  componentDidLoad() {
+    if (Build.isBrowser) {
+      // Update google analytics
+      const page = this.history.location.pathname;
+      (window as any).ga('send', 'pageview', page);
+    }
   }
 
   render() {
@@ -19,7 +30,7 @@ export class AppAbout implements ComponentInterface {
         <img src="/assets/images/newyou_reception.jpg" class="reception-img" alt="Reception in New You Medispa" />
 
         <h1>About Us</h1>
-        <p>New You Medispa Ltd are the leading experts in low-cost but highly effective cosmetic treatments including <a href="/treatment/muscle-relaxing" title="Muscle Relaxing with New You Medispa" class="underline">anti-wrinkle treatments</a> and <a href="/treatment/dermal-filler" title="Derma Fillers with New You Medispa" class="underline">Dermal Fillers</a>.</p>
+        <p>New You Medispa Ltd are the leading experts in low-cost but highly effective cosmetic treatments including <stencil-route-link url="/treatment/muscle-relaxing">anti-wrinkle treatments</stencil-route-link> and <stencil-route-link url="/treatment/dermal-filler">Dermal Fillers</stencil-route-link>>.</p>
         <p>Theresa Whiffing and Dianne Turner founded New You Medispa in June 2013. Theresa has previously worked for some of the leading clinics in the North East, including the Newcastle Sk:n clinic and the Ewan Bramley Skin Clinic on the North Shields Fish Quay.</p>
         
         <img src="/assets/images/newyou_outside.jpg" alt="Outside of New You Medispa" class="outside-img" />
