@@ -1,13 +1,13 @@
-import {Component, h, ComponentInterface, Prop} from '@stencil/core';
-import {RouterHistory} from '@stencil/router';
+import { Component, h, ComponentInterface, Prop } from "@stencil/core";
+import { RouterHistory } from "@stencil/router";
 
-import {defaultPageMetaDescription} from '../../global/site-structure-utils';
-import {registerViewWithTracking} from '../../global/services/helper.utils';
+import { defaultPageMetaDescription } from "../../global/site-structure-utils";
+import { registerViewWithTracking } from "../../global/services/helper.utils";
 
 @Component({
-  tag: 'app-price-list',
-  styleUrl: 'app-price-list.css',
-  shadow: true
+  tag: "app-price-list",
+  styleUrl: "app-price-list.css",
+  shadow: true,
 })
 export class AppPriceList implements ComponentInterface {
   private pageMetaDescription = defaultPageMetaDescription;
@@ -16,7 +16,9 @@ export class AppPriceList implements ComponentInterface {
 
   constructor() {
     document.title = `Treatment price list for New You Medispa`;
-    document.querySelector('meta[name="description"]').setAttribute("content", this.pageMetaDescription);
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", this.pageMetaDescription);
   }
 
   componentDidLoad() {
@@ -32,9 +34,11 @@ export class AppPriceList implements ComponentInterface {
         <table>
           <tbody>
             <tr>
-              <th style={{width: '50%;'}}>Treatment</th>
-              <th style={{width: '30%'}}>Areas</th>
-              <th class="text-right" style={{width: '20%;'}}>Price</th>
+              <th style={{ width: "50%;" }}>Treatment</th>
+              <th style={{ width: "30%" }}>Areas</th>
+              <th class="text-right" style={{ width: "20%;" }}>
+                Price
+              </th>
             </tr>
             <tr>
               <td rowSpan={3}>Muscle relaxing injections</td>
@@ -45,7 +49,7 @@ export class AppPriceList implements ComponentInterface {
               <td class="text-center">2 areas</td>
               <td class="text-right">£180.00</td>
             </tr>
-            <tr>   
+            <tr>
               <td class="text-center">3 areas</td>
               <td class="text-right">£200.00</td>
             </tr>
@@ -56,7 +60,7 @@ export class AppPriceList implements ComponentInterface {
             <tr>
               <td colSpan={2}>dermal fillers</td>
               <td class="text-right">
-                <span class="from">from</span> £180.00
+                <span class="from">from</span> £150.00
               </td>
             </tr>
             <tr>
@@ -76,25 +80,23 @@ export class AppPriceList implements ComponentInterface {
               <td class="text-right">£35.00</td>
             </tr>
             <tr>
-              <td colSpan={2}>3D lipomed</td>
-              <td class="text-right">
-                <span class="from">from</span> £85.00</td>
+              <td colSpan={2}>dermaplane</td>
+              <td class="text-right">£25.00</td>
             </tr>
             <tr>
-              <td colSpan={3}>&nbsp;</td></tr>
-              <tr>
-                <td class="header" colSpan={3}>endymed 3deep</td>
-              </tr>
-              <tr>
-                <td class="subHeader" colSpan={3}>course of 6</td>
-              </tr>
+              <td colSpan={2}>plasma treatment</td>
+              <td class="text-right">£200.00</td>
+            </tr>
             <tr>
-              <td rowSpan={3}>radiofrequency (RF)</td>
-              <td class="text-center">1 area</td>
+              <td colSpan={3}>&nbsp;</td>
+            </tr>
+            <tr>
+              <td rowSpan={3}>endymed 3deep radiofrequency (RF)</td>
+              <td class="text-center">1 area (course of 6)</td>
               <td class="text-right">£500.00</td>
             </tr>
             <tr>
-              <td class="text-center">2 areas</td>
+              <td class="text-center">2 areas (course of 6)</td>
               <td class="text-right">£900.00</td>
             </tr>
             <tr>
@@ -102,16 +104,19 @@ export class AppPriceList implements ComponentInterface {
               <td class="text-right">£100.00</td>
             </tr>
             <tr>
-              <td class="sub-header" colSpan={3}>course of 3</td>
+              <td colSpan={3}>&nbsp;</td>
             </tr>
             <tr>
               <td rowSpan={2}>fractional skin resurfacing (FSR)</td>
-              <td class="text-center">1 area</td>
+              <td class="text-center">1 area (course of 3)</td>
               <td class="text-right">£700.00</td>
             </tr>
             <tr>
-              <td class="text-center">2 area</td>
+              <td class="text-center">2 area(course of 3)</td>
               <td class="text-right">£120.00</td>
+            </tr>
+            <tr>
+              <td colSpan={3}>&nbsp;</td>
             </tr>
             <tr>
               <td>FSR + RF</td>
