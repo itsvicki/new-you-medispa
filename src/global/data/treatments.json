@@ -259,7 +259,8 @@
             "a",
             {
               "href": "https://juvederm.co.uk/",
-              "target": "_blank"
+              "target": "_blank",
+              "rel": "noopener"
             },
             "Juvederm"
           ]
@@ -379,7 +380,8 @@
           "a",
           {
             "href": "https://skintech.info",
-            "target": "_blank"
+            "target": "_blank",
+            "rel": "noopener"
           },
           [
             "img",
@@ -496,7 +498,8 @@
             "a",
             {
               "href": "https://skintech.info",
-              "target": "_blank"
+              "target": "_blank",
+              "rel": "noopener"
             },
             "Skin Tech"
           ]
@@ -538,7 +541,8 @@
             "a",
             {
               "href": "https://neostrata.com/",
-              "target": "_blank"
+              "target": "_blank",
+              "rel": "noopener"
             },
             "NeoStrata"
           ],
@@ -806,7 +810,8 @@
             "a",
             {
               "href": "https://dermaluxled.com/LED-Phototherapy/",
-              "target": "_blank"
+              "target": "_blank",
+              "rel": "noopener"
             },
             "Dermalux®"
           ],
@@ -939,7 +944,8 @@
             "a",
             {
               "href": "https://dermaluxled.com/LED-Phototherapy",
-              "target": "_blank"
+              "target": "_blank",
+              "rel": "noopener"
             },
             "Dermalux®"
           ]

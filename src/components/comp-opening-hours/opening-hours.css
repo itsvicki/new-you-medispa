@@ -1,4 +1,4 @@
-@import '../../global/variables.css';
+@import "../../global/variables.css";
 
 .row {
   display: flex;
@@ -9,10 +9,24 @@
   font-family: var(--font-family);
   font-size: var(--paragraph-font-size);
   color: var(--primary-purple);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   /* line-height: 2rem */
 }
 
 .day {
   flex: 0 0 40px;
+}
+
+.btn {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  display: block;
+  width: 14rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #ffffff;
 }

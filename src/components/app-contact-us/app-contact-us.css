@@ -1,10 +1,11 @@
-@import '../../global/variables.css';
+@import "../../global/variables.css";
 
 :host {
   display: block;
 }
 
-iframe, .location {
+iframe,
+.location {
   width: 100%;
 }
 

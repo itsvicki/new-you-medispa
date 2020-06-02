@@ -1,4 +1,4 @@
-@import '../../global/variables.css';
+@import "../../global/variables.css";
 
 .reception-img {
   display: block;
@@ -38,5 +38,5 @@
 .opening-hours {
   margin: 0 auto;
   padding: 2rem 0;
-  width: 20rem;
+  width: 50rem;
 }

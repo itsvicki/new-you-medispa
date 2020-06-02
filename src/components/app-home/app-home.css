@@ -1,4 +1,4 @@
-@import '../../global/variables.css';
+@import "../../global/variables.css";
 
 .em {
   font-style: italic;
@@ -6,4 +6,18 @@
   /* IE/Edge fix for it not inheriting certain p styles */
   color: var(--primary-purple);
   font-size: var(--paragraph-font-size);
+}
+
+.btn {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  display: block;
+  width: 14rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #ffffff;
 }
