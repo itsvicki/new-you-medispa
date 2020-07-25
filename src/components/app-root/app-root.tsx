@@ -1,9 +1,9 @@
-import { Component, h, ComponentInterface } from '@stencil/core';
+import { Component, h, ComponentInterface } from "@stencil/core";
 
 @Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.css',
-  shadow: true
+  tag: "app-root",
+  styleUrl: "app-root.css",
+  shadow: true,
 })
 export class AppRoot implements ComponentInterface {
   render() {
@@ -16,15 +16,25 @@ export class AppRoot implements ComponentInterface {
           <main>
             <stencil-router scrollTopOffset={0}>
               <stencil-route-switch>
-                <stencil-route url='/' component='app-home' exact={true} />
-                <stencil-route url='/about' component='app-about' />
-                <stencil-route url={['/products', '/products/']} component='app-products' exact={true} />
-                <stencil-route url='/product/:page' component='app-product' />
-                <stencil-route url={['/treatments', '/treatments/']} component='app-treatments' exact={true} />
-                <stencil-route url='/treatment/:page' component='app-treatment' />
-                <stencil-route url='/book-a-consultation' component='app-book' />
-                <stencil-route url='/price-list' component='app-price-list' />
-                <stencil-route url='/contact-us' component='app-contact-us' />
+                <stencil-route url="/" component="app-home" exact={true} />
+                <stencil-route url="/about" component="app-about" />
+                <stencil-route
+                  url={["/products", "/products/"]}
+                  component="app-products"
+                  exact={true}
+                />
+                <stencil-route url="/product/:page" component="app-product" />
+                <stencil-route
+                  url={["/treatments", "/treatments/"]}
+                  component="app-treatments"
+                  exact={true}
+                />
+                <stencil-route
+                  url="/treatment/:page"
+                  component="app-treatment"
+                />
+                <stencil-route url="/price-list" component="app-price-list" />
+                <stencil-route url="/contact-us" component="app-contact-us" />
                 <stencil-route component="app-not-found" />
               </stencil-route-switch>
             </stencil-router>

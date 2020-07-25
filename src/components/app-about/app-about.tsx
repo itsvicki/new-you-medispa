@@ -71,7 +71,7 @@ export class AppAbout implements ComponentInterface {
           <a
             href="https://www.facebook.com/pages/New-You-Medispa/464518073640015"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             title="View New You Medispa on Facebook"
           >
             Facebook
@@ -80,9 +80,9 @@ export class AppAbout implements ComponentInterface {
         </p>
         <p>
           <a
-            href="/book-a-consultation"
-            title="Book a consultation New You Medispa"
-            class="book-consultation"
+            href="https://connect.pabau.com/bookings.php?compid=8710"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Book your free consultation today!
           </a>
@@ -107,26 +107,34 @@ export class AppAbout implements ComponentInterface {
         <p>
           She is trained in the use of a wide range of world wide endorsed
           brands including Botox,{" "}
-          <a href="https://www.juvederm.co.uk/" target="_blank" rel="noopener">
+          <a
+            href="https://www.juvederm.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Juviderm
           </a>
           ,{" "}
           <a
             href="https://lifestyleaesthetics.com/home/teosyal.html"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Teosyal
           </a>
           ,{" "}
-          <a href="https://restylane.com/" target="_blank" rel="noopener">
+          <a
+            href="https://restylane.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Restylane
           </a>{" "}
           and{" "}
           <a
             href="hhttps://ha-derma.co.uk/products/profhilo/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Prophilo
           </a>
