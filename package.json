@@ -2,7 +2,7 @@
   "name": "newyoumedispa",
   "private": true,
   "version": "0.0.1",
-  "description": "Website of New You Medispa.",
+  "description": "Stencil App Starter",
   "scripts": {
     "build": "stencil build",
     "build-prerender": "stencil build --prerender",
