@@ -28,23 +28,23 @@ export class AppHome implements ComponentInterface {
   render() {
     return (
       <div>
-        <h1>Latest News - Clinic Reopening</h1>
-
         <p>
-          Good news! Medically qualified practitioners have been allowed to
-          open. We look forward to seeing everyone soon!
+          The Government has annouced on the 30th December, that the North East are to move to Tier 4. Although we are a medical
+          establishment, we feel the situation is very serious, with the infection rate rising so rapidly. The safety of our
+          clients and supporting the NHS is paramount to us. We have therefore with regret decided to close.
         </p>
 
         <p>
-          If you have any queries or need any help, please contact us at:&nbsp;
-          <a href="mailto:reception@newyou-medispa.co.uk">
+          All Clients, who already have appointments, will be prioritised once we feel it is safe to re-open. We will keep you
+          updated. If you have any queries or need any help, please contact us at:&nbsp;
+        <a href="mailto:reception@newyou-medispa.co.uk">
             reception@newyou-medispa.co.uk
-          </a>
+        </a>
         </p>
 
         <p>
           Thank you again for your on-going support. <br />
-          Dianne and Theresa
+        Dianne and Theresa
         </p>
         <br />
         <br />

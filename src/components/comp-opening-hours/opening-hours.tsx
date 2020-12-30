@@ -9,7 +9,7 @@ export class OpeningHours implements ComponentInterface {
   private openingData = [
     {
       day: "Mon",
-      time: "09:30 - 17:00",
+      time: "09:30 - 16:00",
     },
     {
       day: "Tue",
