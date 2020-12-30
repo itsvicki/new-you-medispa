@@ -28,28 +28,7 @@ export class AppHome implements ComponentInterface {
   render() {
     return (
       <div>
-        <p>
-          The Government has annouced on the 30th December, that the North East are to move to Tier 4. Although we are a medical
-          establishment, we feel the situation is very serious, with the infection rate rising so rapidly. The safety of our
-          clients and supporting the NHS is paramount to us. We have therefore with regret decided to close.
-        </p>
-
-        <p>
-          All Clients, who already have appointments, will be prioritised once we feel it is safe to re-open. We will keep you
-          updated. If you have any queries or need any help, please contact us at:&nbsp;
-        <a href="mailto:reception@newyou-medispa.co.uk">
-            reception@newyou-medispa.co.uk
-        </a>
-        </p>
-
-        <p>
-          Thank you again for your on-going support. <br />
-        Dianne and Theresa
-        </p>
-        <br />
-        <br />
-        <br />
-
+        
         <div id="intro">
           <h2>
             New You Medispa are the leading experts in affordable skin
