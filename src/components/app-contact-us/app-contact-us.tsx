@@ -37,6 +37,24 @@ export class AppContactUs implements ComponentInterface {
         </div>
 
         <div class="contact-information">
+          <h1>Latest News - Clinic Closed</h1>
+          <p>
+            The Government has annouced on the 30th December, that the North East are to move to Tier 4. Although we are a medical establishment, we feel the situation is very serious, with the infection rate rising so rapidly. The safety of our clients and supporting the NHS is paramount to us. We have therefore with regret decided to close.
+          </p>
+          <p>
+            All Clients, who already have appointments, will be prioritised once we feel it is safe to re-open. We will keep you updated. If you have any queries or need any help, please contact us at:&nbsp;
+            <a href="mailto:reception@newyou-medispa.co.uk">
+              reception@newyou-medispa.co.uk
+            </a>
+          </p>
+          <p>
+            Thank you again for your on-going support. <br />
+            Dianne and Theresa
+          </p>
+          <br />
+          <br />
+          <br />
+
           <h1>Contact us</h1>
           
           <p>New You Medispa</p>
@@ -52,8 +70,6 @@ export class AppContactUs implements ComponentInterface {
           </p>
 
           <p><h2 class="small">Telephone:</h2> <a href="tel:01912573141">0191 257 3141</a></p>
-
-          <opening-hours smallTitle></opening-hours>
         </div>
       </div>
     );
