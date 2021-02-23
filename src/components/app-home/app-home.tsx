@@ -28,20 +28,17 @@ export class AppHome implements ComponentInterface {
   render() {
     return (
       <div>
-        <h1>Latest News - Clinic Temporarily Closing</h1>
+        <h1>Latest News - Clinic Reopening</h1>
 
         <p>
-          The Government has annouced on the 30th December, that the North East are to move to Tier 4. Although we are a medical
-          establishment, we feel the situation is very serious, with the infection rate rising so rapidly. The safety of our
-          clients and supporting the NHS is paramount to us. We have therefore with regret decided to close.
+          Following the Government announcement we will be opening on the 12th April, appointments can be made via the <a href="https://connect.pabau.com/bookings.php?compid=8710" target="_blank">online booking system</a>.
         </p>
 
         <p>
-          All Clients, who already have appointments, will be prioritised once we feel it is safe to re-open. We will keep you
-          updated. If you have any queries or need any help, please contact us at:&nbsp;
+          If you have any queries or need any help, please contact us at:&nbsp;
           <a href="mailto:reception@newyou-medispa.co.uk">
             reception@newyou-medispa.co.uk
-          </a>
+          </a>.
         </p>
 
         <p>

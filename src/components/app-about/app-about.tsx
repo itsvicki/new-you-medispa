@@ -88,9 +88,9 @@ export class AppAbout implements ComponentInterface {
           </a>
         </p>
 
-        {/* <div class="opening-hours">
+        <div class="opening-hours">
           <opening-hours></opening-hours>
-        </div> */}
+        </div>
 
         <h2>Theresa Whiffing</h2>
         <p>
