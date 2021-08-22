@@ -4,6 +4,10 @@
   display: block;
 }
 
+.contact-information {
+  margin-top: 20px;
+}
+
 iframe,
 .location {
   width: 100%;

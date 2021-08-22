@@ -3,7 +3,7 @@
 .reception-img {
   display: block;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 @media screen and (min-width: 840px) {
