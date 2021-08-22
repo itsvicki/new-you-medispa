@@ -1,14 +1,15 @@
 a.skip-main {
-  left:-999px;
-  position:absolute;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-  z-index:-999;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
 }
 
-a.skip-main:focus, a.skip-main:active {
+a.skip-main:focus,
+a.skip-main:active {
   display: block;
   position: static;
   width: auto;
@@ -29,19 +30,19 @@ header {
 }
 
 @media screen and (max-width: 930px) {
-  header { 
+  header {
     justify-content: center;
   }
 }
 
 .header,
 .subHeader {
-  color: #928E1E
+  color: #928e1e;
 }
 
 header {
-  background-color: #280840;
-  padding: 1rem
+  background-color: var(--primary-black);
+  padding: 1rem;
 }
 
 /* 
@@ -63,7 +64,6 @@ img {
 */
 .nav {
   text-align: center;
-  padding-top: 1rem
 }
 
 .nav a {
@@ -73,12 +73,13 @@ img {
   text-transform: lowercase;
   white-space: nowrap;
   font-size: 1.5rem;
-  text-decoration: none
+  text-decoration: none;
 }
 
-.nav a.green,
+.nav a.selected,
 .nav a:hover {
-  color: #928E1E
+  color: var(--primary-peach);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 930px) {

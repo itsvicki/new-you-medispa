@@ -1,4 +1,4 @@
-import { Component, h, ComponentInterface } from "@stencil/core";
+import { Component, h, ComponentInterface, Host } from "@stencil/core";
 
 @Component({
   tag: "app-root",
@@ -8,9 +8,8 @@ import { Component, h, ComponentInterface } from "@stencil/core";
 export class AppRoot implements ComponentInterface {
   render() {
     return (
-      <div>
+      <Host>
         <nyms-global-header></nyms-global-header>
-        <nyms-social-bar></nyms-social-bar>
 
         <div id="body">
           <main>
@@ -39,15 +38,10 @@ export class AppRoot implements ComponentInterface {
               </stencil-route-switch>
             </stencil-router>
           </main>
-
-          <aside>
-            <nyms-sidebar-treatments></nyms-sidebar-treatments>
-            <nyms-sidebar-testimonial></nyms-sidebar-testimonial>
-          </aside>
         </div>
 
         <nyms-global-footer></nyms-global-footer>
-      </div>
+      </Host>
     );
   }
 }

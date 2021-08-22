@@ -19,5 +19,8 @@
     "puppeteer": "1.20.0"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.1.0"
+  }
 }

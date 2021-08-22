@@ -1,16 +1,22 @@
-import {Component, Host, Prop, h, ComponentInterface} from '@stencil/core';
-import {MatchResults, RouterHistory} from '@stencil/router';
+import { Component, Prop, h, ComponentInterface } from "@stencil/core";
+import { MatchResults, RouterHistory } from "@stencil/router";
 
-import {ProductService} from '../../global/services/product.service';
-import {toHypertext, registerViewWithTracking} from '../../global/services/helper.utils';
+import { ProductService } from "../../global/services/product.service";
+import {
+  toHypertext,
+  registerViewWithTracking,
+} from "../../global/services/helper.utils";
 
-import {ProductInterface, ErrorInterface} from '../../global/definitions/definitions';
-import {fileNotFound} from '../../global/site-structure-utils';
+import {
+  ProductInterface,
+  ErrorInterface,
+} from "../../global/definitions/definitions";
+import { fileNotFound } from "../../global/site-structure-utils";
 
 @Component({
-  tag: 'app-product',
-  styleUrl: 'app-product.css',
-  shadow: true
+  tag: "app-product",
+  styleUrl: "app-product.css",
+  shadow: true,
 })
 export class AppProduct implements ComponentInterface {
   private fileNotFound = fileNotFound;
@@ -22,17 +28,18 @@ export class AppProduct implements ComponentInterface {
 
   async componentWillRender() {
     const page = `/product/${this.match.params.page}`;
-    
+
     try {
-      const product = await ProductService.getProduct(page);     
+      const product = await ProductService.getProduct(page);
       this.product = product;
 
       // Update browser title & description
       document.title = `${product.name} - New You Medispa`;
-      document.querySelector('meta[name="description"]').setAttribute("content", product.browserDescription); 
-    }
-    catch(err) {
-      if (err.code === 'NO_MATCH') {
+      document
+        .querySelector('meta[name="description"]')
+        .setAttribute("content", product.browserDescription);
+    } catch (err) {
+      if (err.code === "NO_MATCH") {
         this.fileNotFound();
       }
 
@@ -45,30 +52,33 @@ export class AppProduct implements ComponentInterface {
   }
 
   render() {
-    const {errorMessage} = this.error;
+    const { errorMessage } = this.error;
     const {
-      name, 
-      image, 
-      type, 
-      size, 
-      price, 
+      name,
+      image,
+      type,
+      size,
+      price,
       productFeaturesHypertext,
       directionsHypertext,
-      precautionHypertext
+      precautionHypertext,
     } = this.product;
 
     return (
-      <Host>
-        {errorMessage 
-          ? <p>{errorMessage}</p>
-          : <div>
-              <div class="product">
+      <div class="content-wrapper">
+        {errorMessage ? (
+          <p>{errorMessage}</p>
+        ) : (
+          <div>
+            <div class="product">
               <h1>{name}</h1>
 
-              <stencil-route-link url='/products'>Back to products</stencil-route-link>
+              <stencil-route-link url="/products">
+                Back to products
+              </stencil-route-link>
             </div>
 
-            <div class="product-more-details"> 
+            <div class="product-more-details">
               <div class="image">
                 <img src={image} alt="" />
               </div>
@@ -87,28 +97,40 @@ export class AppProduct implements ComponentInterface {
                   <dd>{price}</dd>
                 </dl>
 
-                {(productFeaturesHypertext) &&
-                  <nyms-accordion accordionTitle="Product Features" name="accordion-product-features" open={true}>
+                {productFeaturesHypertext && (
+                  <nyms-accordion
+                    accordionTitle="Product Features"
+                    name="accordion-product-features"
+                    open={true}
+                  >
                     {toHypertext(productFeaturesHypertext)}
                   </nyms-accordion>
-                }
+                )}
 
-                {(directionsHypertext) &&
-                  <nyms-accordion accordionTitle="Directions" name="accordion-directions" open={false}>
+                {directionsHypertext && (
+                  <nyms-accordion
+                    accordionTitle="Directions"
+                    name="accordion-directions"
+                    open={false}
+                  >
                     {toHypertext(directionsHypertext)}
                   </nyms-accordion>
-                }
+                )}
 
-                {(precautionHypertext) &&
-                  <nyms-accordion accordionTitle="Precaution" name="accordion-precaution" open={false}>
+                {precautionHypertext && (
+                  <nyms-accordion
+                    accordionTitle="Precaution"
+                    name="accordion-precaution"
+                    open={false}
+                  >
                     {toHypertext(precautionHypertext)}
                   </nyms-accordion>
-                }
+                )}
               </div>
             </div>
           </div>
-        }
-      </Host>
+        )}
+      </div>
     );
   }
 }

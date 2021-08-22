@@ -1,7 +1,6 @@
 import { Component, h, ComponentInterface } from "@stencil/core";
 
 import { moveUserFocusToEl } from "../../global/services/helper.utils";
-
 @Component({
   tag: "nyms-global-header",
   styleUrl: "global-header.css",
@@ -26,20 +25,23 @@ export class GlobalHeader implements ComponentInterface {
 
         <header>
           <a class="logo" href="/">
-            <img src="/assets/icon/logo.jpg" alt="New You Medispa Homepage" />
+            <img
+              src="/assets/icon/logo-white.png"
+              alt="New You Medispa Homepage"
+            />
           </a>
 
           <nav class="nav" role="navigation">
-            <stencil-route-link url="/" activeClass="green" exact={true}>
+            <stencil-route-link url="/" activeClass="selected" exact={true}>
               Home
             </stencil-route-link>
-            <stencil-route-link url="/about" activeClass="green">
+            <stencil-route-link url="/about" activeClass="selected">
               About
             </stencil-route-link>
-            <stencil-route-link url="/products" activeClass="green">
+            <stencil-route-link url="/products" activeClass="selected">
               Products
             </stencil-route-link>
-            <stencil-route-link url="/treatments" activeClass="green">
+            <stencil-route-link url="/treatments" activeClass="selected">
               Treatments
             </stencil-route-link>
             <a
@@ -49,10 +51,10 @@ export class GlobalHeader implements ComponentInterface {
             >
               Book an appointment
             </a>
-            <stencil-route-link url="/price-list" activeClass="green">
+            <stencil-route-link url="/price-list" activeClass="selected">
               Price List
             </stencil-route-link>
-            <stencil-route-link url="/contact-us" activeClass="green">
+            <stencil-route-link url="/contact-us" activeClass="selected">
               Contact Us
             </stencil-route-link>
           </nav>

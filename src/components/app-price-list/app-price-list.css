@@ -2,7 +2,7 @@
 
 table td {
   font-size: 1.4rem;
-  color:var(--primary-purple);
+  color:var(--primary-black);
 }
 
 table td {
@@ -21,7 +21,7 @@ table td {
 }
 
 table th {
-  background-color:var(--primary-purple);
+  background-color:var(--primary-black);
   color: #FFF;
   padding: 1rem;
   font-weight: normal;
@@ -37,5 +37,5 @@ table th {
 
 .from, .sub-header {
   font-size: 1.4rem;
-  color: var(--primary-green);
+  color: var(--primary-black);
 }

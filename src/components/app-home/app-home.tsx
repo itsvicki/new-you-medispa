@@ -1,4 +1,4 @@
-import { Component, h, ComponentInterface, Prop } from "@stencil/core";
+import { Component, h, ComponentInterface, Prop, Host } from "@stencil/core";
 import { RouterHistory } from "@stencil/router";
 
 import { defaultPageMetaDescription } from "../../global/site-structure-utils";
@@ -27,58 +27,56 @@ export class AppHome implements ComponentInterface {
 
   render() {
     return (
-      <div>
-        <h1>Latest News - Clinic Reopening</h1>
+      <Host>
+        <div class="presentation-1">
+          <div class="col1 animate__animated animate__zoomIn">
+            <h2>
+              New You Medispa are the leading experts in affordable skin
+              rejuventation
+            </h2>
+            <p>
+              We understand that every person is unique, that's why we provide
+              each client with your own custom-made treatment plan to give you a
+              fresh and youthful look.
+            </p>
+            <p>
+              Whether we're giving dermal fillers, muscle relaxing treatment or
+              skin peels we pride ourselves on always providing a relaxed,
+              friendly atmosphere, where your satisfaction is both paramount and
+              guaranteed.
+            </p>
+            <p>
+              All treatments are provided by our expert Harley Street trained
+              nurse with over 12 years of experience.
+            </p>
+            <p>
+              Call today for your free consultation and find out how we can give
+              you your own New You look.
+            </p>
+            <p>
+              New You Medispa,{" "}
+              <span class="em">be your own kind of beautiful.</span>
+            </p>
+          </div>
 
-        <p>
-          Following the Government announcement we will be opening on the 12th April, appointments can be made via the <a href="https://connect.pabau.com/bookings.php?compid=8710" target="_blank">online booking system</a>.
-        </p>
-
-        <p>
-          If you have any queries or need any help, please contact us at:&nbsp;
-          <a href="mailto:reception@newyou-medispa.co.uk">
-            reception@newyou-medispa.co.uk
-          </a>.
-        </p>
-
-        <p>
-          Thank you again for your on-going support. <br />
-          Dianne and Theresa
-        </p>
-        <br />
-        <br />
-        <br />
-
-        <div id="intro">
-          <h2>
-            New You Medispa are the leading experts in affordable skin
-            rejuventation.
-          </h2>
-          <p>
-            We understand that every person is unique, that's why we provide
-            each client with your own custom-made treatment plan to give you a
-            fresh and youthful look.
-          </p>
-          <p>
-            Whether we're giving dermal fillers, muscle relaxing treatment or
-            skin peels we pride ourselves on always providing a relaxed,
-            friendly atmosphere, where your satisfaction is both paramount and
-            guaranteed.
-          </p>
-          <p>
-            All treatments are provided by our expert Harley Street trained
-            nurse with over 12 years of experience.
-          </p>
-          <p>
-            Call today for your free consultation and find out how we can give
-            you your own New You look.
-          </p>
-          <p>
-            New You Medispa,{" "}
-            <span class="em">be your own kind of beautiful.</span>
-          </p>
+          <div class="col2">
+            <img
+              src="/assets/images/img2.jpg"
+              class="animate__animated animate__zoomIn"
+            />
+            <img
+              src="/assets/images/img1.jpg"
+              class="animate__animated animate__zoomIn"
+            />
+          </div>
         </div>
-      </div>
+
+        {/* Testimonial */}
+        <nyms-fullwidth-testimonial></nyms-fullwidth-testimonial>
+
+        {/* Contact us */}
+        <nyms-fullwidth-chat></nyms-fullwidth-chat>
+      </Host>
     );
   }
 }

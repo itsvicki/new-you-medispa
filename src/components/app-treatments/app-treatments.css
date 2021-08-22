@@ -1,4 +1,4 @@
-@import '../../global/variables.css';
+@import "../../global/variables.css";
 
 :host {
   display: block;
@@ -6,7 +6,7 @@
 
 .treatments {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;

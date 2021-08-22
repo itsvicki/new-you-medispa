@@ -1,19 +1,18 @@
-@import '../../global/variables.css';
+@import "../../global/variables.css";
 
 :host {
   display: block;
 }
 
 h3 {
-  color: var(--primary-green);
+  color: var(--primary-black);
   margin-top: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .bold {
   font-weight: bold;
 }
-
 
 .product {
   display: flex;
@@ -45,7 +44,6 @@ nav ul li a {
   text-transform: lowercase;
 }
 
-
 /* 
   Product details 
 */
@@ -73,12 +71,12 @@ nav ul li a {
   flex-wrap: wrap;
 }
 
-.product-information dt, 
+.product-information dt,
 .product-information dd {
   font-family: var(--font-family);
   font-size: var(--paragraph-font-size);
-  color: var(--primary-purple);
-  border-bottom: 1px dashed var(--primary-green);
+  color: var(--primary-black);
+  border-bottom: 1px dashed var(--primary-black);
   width: 50%;
   margin-top: 1rem;
   padding-bottom: 0.5rem;
