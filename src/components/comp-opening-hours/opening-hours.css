@@ -8,7 +8,7 @@
   /* padding: .5rem */
   font-family: var(--font-family);
   font-size: var(--paragraph-font-size);
-  color: var(--primary-purple);
+  color: var(--primary-black);
   margin-bottom: 0.5rem;
   /* line-height: 2rem */
 }
@@ -18,7 +18,7 @@
 }
 
 .btn {
-  background-color: var(--primary-purple);
+  background-color: var(--primary-black);
   color: #ffffff;
   display: block;
   width: 14rem;

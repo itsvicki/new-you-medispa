@@ -1,0 +1,68 @@
+@import "../../global/variables.css";
+
+.wrapper {
+  background-color: var(--primary-peach);
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.testimonials {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .testimonials {
+    flex-direction: row;
+  }
+}
+
+h3 {
+  padding: 0;
+  margin: 0 0 10px 0;
+
+  position: relative;
+  flex: 60px;
+  max-width: 300px;
+  text-align: center;
+  justify-content: center;
+  font-family: var(--secondary-font-family);
+}
+
+@media only screen and (min-width: 800px) {
+  h3 {
+    flex: 150px;
+    margin-bottom: 0;
+  }
+}
+
+.background-word {
+  color: #fff;
+  font-size: 7rem;
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 1;
+  font-weight: 700;
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.front-word {
+  z-index: 2;
+  font-weight: bold;
+  position: relative;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+
+  flex: 1;
+  color: var(--secondary-black);
+  font-family: var(--secondary-font-family);
+}

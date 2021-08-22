@@ -45,7 +45,7 @@
 
 .header:hover .title,
 .header:hover .subtitle {
-  color: var(--primary-purple);
+  color: var(--primary-black);
 }
 
 .title {
@@ -53,7 +53,7 @@
   width: 100%;
   margin: 0;
   transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  color: var(--primary-purple);
+  color: var(--primary-black);
   cursor: pointer;
   box-sizing: border-box;
   background-color: transparent;

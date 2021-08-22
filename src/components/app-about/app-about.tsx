@@ -26,14 +26,18 @@ export class AppAbout implements ComponentInterface {
 
   render() {
     return (
-      <div>
+      <div class="content-wrapper">
         <img
           src="/assets/images/newyou_reception.jpg"
           class="reception-img"
           alt="Reception in New You Medispa"
         />
 
-        <h1>About Us</h1>
+        <div class="heading-wrapper">
+          <h1>about us</h1>
+          <div class="divider"></div>
+        </div>
+
         <p>
           New You Medispa Ltd are the leading experts in low-cost but highly
           effective cosmetic treatments including{" "}
