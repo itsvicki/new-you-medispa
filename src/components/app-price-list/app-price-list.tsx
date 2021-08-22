@@ -41,6 +41,12 @@ export class AppPriceList implements ComponentInterface {
               </th>
             </tr>
             <tr>
+              <td colSpan={2}>IPL hair removal, facial vein and pigmentation removal </td>
+              <td class="text-right">
+                <span class="from">coming soon!</span>
+              </td>
+            </tr>
+            <tr>
               <td rowSpan={3}>Muscle relaxing injections</td>
               <td class="text-center">1 area</td>
               <td class="text-right">£90.00</td>
@@ -54,8 +60,16 @@ export class AppPriceList implements ComponentInterface {
               <td class="text-right">£200.00</td>
             </tr>
             <tr>
-              <td colSpan={2}>juvéderm volbella lip filler</td>
-              <td class="text-right">£250.00</td>
+              <td colSpan={2}>profhlio</td>
+              <td class="text-right">
+              <span class="from">from</span> £200.00
+              </td>
+            </tr>
+            <tr>
+              <td colSpan={2}>lip augmentation</td>
+              <td class="text-right">
+              <span class="from">from</span> £150.00
+              </td>
             </tr>
             <tr>
               <td colSpan={2}>dermal fillers</td>
@@ -68,12 +82,12 @@ export class AppPriceList implements ComponentInterface {
               <td class="text-right">£130.00</td>
             </tr>
             <tr>
-              <td colSpan={2}>tca peel</td>
-              <td class="text-right">£150.00</td>
+              <td colSpan={2}>perfect peel</td>
+              <td class="text-right">£250.00</td>
             </tr>
             <tr>
               <td colSpan={2}>glycolic skin peel</td>
-              <td class="text-right">£20.00</td>
+              <td class="text-right">£25.00</td>
             </tr>
             <tr>
               <td colSpan={2}>dermalux LED phototherapy</td>
@@ -85,7 +99,8 @@ export class AppPriceList implements ComponentInterface {
             </tr>
             <tr>
               <td colSpan={2}>plasma treatment</td>
-              <td class="text-right">£200.00</td>
+              <td class="text-right">
+              <span class="from">from</span> £50.00</td>
             </tr>
             <tr>
               <td colSpan={3}>&nbsp;</td>
@@ -100,28 +115,14 @@ export class AppPriceList implements ComponentInterface {
               <td class="text-right">£900.00</td>
             </tr>
             <tr>
-              <td class="text-center">individual/topup treatment</td>
-              <td class="text-right">£100.00</td>
-            </tr>
-            <tr>
               <td colSpan={3}>&nbsp;</td>
             </tr>
             <tr>
-              <td rowSpan={2}>fractional skin resurfacing (FSR)</td>
+              <td>high intensity focused ultrasound (HIFU)</td>
               <td class="text-center">1 area (course of 3)</td>
-              <td class="text-right">£700.00</td>
-            </tr>
-            <tr>
-              <td class="text-center">2 area(course of 3)</td>
-              <td class="text-right">£120.00</td>
-            </tr>
-            <tr>
-              <td colSpan={3}>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>FSR + RF</td>
-              <td class="text-center">1 area</td>
-              <td class="text-right">£1100.00</td>
+              <td class="text-right">
+                <span class="from">from</span> £300.00
+              </td>
             </tr>
           </tbody>
         </table>
