@@ -10,7 +10,7 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@stencil/core": "^1.17.0",
+    "@stencil/core": "^1.17.4",
     "@stencil/router": "^1.0.1",
     "@types/jest": "24.0.25",
     "@types/puppeteer": "1.20.4",
