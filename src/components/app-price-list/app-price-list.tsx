@@ -27,8 +27,11 @@ export class AppPriceList implements ComponentInterface {
 
   render() {
     return (
-      <div>
-        <h1>Treatment Price List</h1>
+      <div class="content-wrapper">
+        <div class="heading-wrapper">
+          <h1>treatment price list</h1>
+          <div class="divider"></div>
+        </div>
         <br />
 
         <table>
@@ -41,7 +44,9 @@ export class AppPriceList implements ComponentInterface {
               </th>
             </tr>
             <tr>
-              <td colSpan={2}>IPL hair removal, facial vein and pigmentation removal </td>
+              <td colSpan={2}>
+                IPL hair removal, facial vein and pigmentation removal{" "}
+              </td>
               <td class="text-right">
                 <span class="from">coming soon!</span>
               </td>
@@ -62,13 +67,13 @@ export class AppPriceList implements ComponentInterface {
             <tr>
               <td colSpan={2}>profhlio</td>
               <td class="text-right">
-              <span class="from">from</span> £200.00
+                <span class="from">from</span> £200.00
               </td>
             </tr>
             <tr>
               <td colSpan={2}>lip augmentation</td>
               <td class="text-right">
-              <span class="from">from</span> £150.00
+                <span class="from">from</span> £150.00
               </td>
             </tr>
             <tr>
@@ -100,7 +105,8 @@ export class AppPriceList implements ComponentInterface {
             <tr>
               <td colSpan={2}>plasma treatment</td>
               <td class="text-right">
-              <span class="from">from</span> £50.00</td>
+                <span class="from">from</span> £50.00
+              </td>
             </tr>
             <tr>
               <td colSpan={3}>&nbsp;</td>

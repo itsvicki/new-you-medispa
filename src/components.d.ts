@@ -43,6 +43,10 @@ export namespace Components {
         "name"?: string;
         "open": boolean;
     }
+    interface NymsFullwidthChat {
+    }
+    interface NymsFullwidthTestimonial {
+    }
     interface NymsGlobalFooter {
     }
     interface NymsGlobalHeader {
@@ -127,6 +131,18 @@ declare global {
         prototype: HTMLNymsAccordionElement;
         new (): HTMLNymsAccordionElement;
     };
+    interface HTMLNymsFullwidthChatElement extends Components.NymsFullwidthChat, HTMLStencilElement {
+    }
+    var HTMLNymsFullwidthChatElement: {
+        prototype: HTMLNymsFullwidthChatElement;
+        new (): HTMLNymsFullwidthChatElement;
+    };
+    interface HTMLNymsFullwidthTestimonialElement extends Components.NymsFullwidthTestimonial, HTMLStencilElement {
+    }
+    var HTMLNymsFullwidthTestimonialElement: {
+        prototype: HTMLNymsFullwidthTestimonialElement;
+        new (): HTMLNymsFullwidthTestimonialElement;
+    };
     interface HTMLNymsGlobalFooterElement extends Components.NymsGlobalFooter, HTMLStencilElement {
     }
     var HTMLNymsGlobalFooterElement: {
@@ -181,6 +197,8 @@ declare global {
         "app-treatment": HTMLAppTreatmentElement;
         "app-treatments": HTMLAppTreatmentsElement;
         "nyms-accordion": HTMLNymsAccordionElement;
+        "nyms-fullwidth-chat": HTMLNymsFullwidthChatElement;
+        "nyms-fullwidth-testimonial": HTMLNymsFullwidthTestimonialElement;
         "nyms-global-footer": HTMLNymsGlobalFooterElement;
         "nyms-global-header": HTMLNymsGlobalHeaderElement;
         "nyms-sidebar-segment": HTMLNymsSidebarSegmentElement;
@@ -241,6 +259,11 @@ declare namespace LocalJSX {
   }>) => void;
         "open"?: boolean;
     }
+    interface NymsFullwidthChat {
+    }
+    interface NymsFullwidthTestimonial {
+        "onRotateQuote"?: (event: CustomEvent<any>) => void;
+    }
     interface NymsGlobalFooter {
     }
     interface NymsGlobalHeader {
@@ -270,6 +293,8 @@ declare namespace LocalJSX {
         "app-treatment": AppTreatment;
         "app-treatments": AppTreatments;
         "nyms-accordion": NymsAccordion;
+        "nyms-fullwidth-chat": NymsFullwidthChat;
+        "nyms-fullwidth-testimonial": NymsFullwidthTestimonial;
         "nyms-global-footer": NymsGlobalFooter;
         "nyms-global-header": NymsGlobalHeader;
         "nyms-sidebar-segment": NymsSidebarSegment;
@@ -294,6 +319,8 @@ declare module "@stencil/core" {
             "app-treatment": LocalJSX.AppTreatment & JSXBase.HTMLAttributes<HTMLAppTreatmentElement>;
             "app-treatments": LocalJSX.AppTreatments & JSXBase.HTMLAttributes<HTMLAppTreatmentsElement>;
             "nyms-accordion": LocalJSX.NymsAccordion & JSXBase.HTMLAttributes<HTMLNymsAccordionElement>;
+            "nyms-fullwidth-chat": LocalJSX.NymsFullwidthChat & JSXBase.HTMLAttributes<HTMLNymsFullwidthChatElement>;
+            "nyms-fullwidth-testimonial": LocalJSX.NymsFullwidthTestimonial & JSXBase.HTMLAttributes<HTMLNymsFullwidthTestimonialElement>;
             "nyms-global-footer": LocalJSX.NymsGlobalFooter & JSXBase.HTMLAttributes<HTMLNymsGlobalFooterElement>;
             "nyms-global-header": LocalJSX.NymsGlobalHeader & JSXBase.HTMLAttributes<HTMLNymsGlobalHeaderElement>;
             "nyms-sidebar-segment": LocalJSX.NymsSidebarSegment & JSXBase.HTMLAttributes<HTMLNymsSidebarSegmentElement>;

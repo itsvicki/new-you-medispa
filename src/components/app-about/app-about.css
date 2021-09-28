@@ -3,7 +3,7 @@
 .reception-img {
   display: block;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 @media screen and (min-width: 840px) {
@@ -29,7 +29,7 @@
 
 .book-consultation {
   display: block;
-  color: var(--primary-green);
+  color: var(--primary-black);
   font-weight: bold;
   font-size: var(--default-font-size);
   text-align: center;

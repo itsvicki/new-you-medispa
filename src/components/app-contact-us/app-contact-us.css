@@ -4,13 +4,17 @@
   display: block;
 }
 
+.contact-information {
+  margin-top: 20px;
+}
+
 iframe,
 .location {
   width: 100%;
 }
 
 h2 {
-  color: var(--primary-purple);
+  color: var(--primary-black);
 }
 
 h2.small {

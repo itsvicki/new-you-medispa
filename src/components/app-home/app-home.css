@@ -1,23 +1,139 @@
 @import "../../global/variables.css";
+@import "../../global/animation.css";
 
-.em {
-  font-style: italic;
-
-  /* IE/Edge fix for it not inheriting certain p styles */
-  color: var(--primary-purple);
-  font-size: var(--paragraph-font-size);
+.presentation-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
 }
 
-.btn {
-  background-color: var(--primary-purple);
-  color: #ffffff;
-  display: block;
-  width: 14rem;
-  padding: 1rem;
-  margin-top: 2rem;
+@media only screen and (min-width: 800px) {
+  .presentation-1 {
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 40px 1fr 1fr 40px;
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+}
+
+/* Content */
+.col1 {
+  background-color: var(--primary-peach);
+  padding: 20px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.col1 *:not(h2) {
+  color: #6b6b6b;
+}
+
+.col1 h2 {
+  margin-top: 0;
   text-align: center;
+  font-size: 2.5rem;
 }
 
-.btn:hover {
-  color: #ffffff;
+@media only screen and (min-width: 800px) {
+  .col1 {
+    background-color: var(--primary-peach);
+    grid-column-start: 1;
+    grid-column-end: -5;
+    grid-row-start: 2;
+    grid-row-end: -2;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.col2 {
+  grid-column-start: -6;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: -1;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 400px) {
+  .col2 {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .col2 {
+    grid-column-start: -6;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+/* Imagery */
+@media only screen and (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+}
+
+img:first-child {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+@media only screen and (min-width: 400px) {
+  img:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  img:first-child {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+img:last-child {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media only screen and (min-width: 400px) {
+  img:last-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  img:last-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }

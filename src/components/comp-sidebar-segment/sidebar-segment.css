@@ -19,7 +19,7 @@ h3 {
   padding: 10px;
   
   background-image: url("/assets/images/background_dot_pink.png");
-  background-color: var(--secondary-purple);
+  background-color: var(--primary-black);
 
   text-align: center;
   text-transform: lowercase;
